@@ -53,14 +53,7 @@ const LandingFooter = () => {
         <div className="flex flex-col gap-2 text-primary_text">
           <h6 className="font-semibold">Contact Us</h6>
           <ul className="flex flex-col gap-3 mt-1">
-            {/* <li className="max-w-[22rem] flex gap-3 text-primary_text/70">
-              <MapPin
-                strokeWidth={1.5}
-                size={20}
-                className="text-primary inline min-w-5"
-              />{" "}
-              <span className="text-sm">{companyDetails.address}</span>
-            </li> */}
+            
             <li className="flex gap-3 text-primary_text/70">
               <Link
                 aria-label="Contact us on email"

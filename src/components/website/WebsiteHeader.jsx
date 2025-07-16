@@ -6,15 +6,32 @@ import { logoImg, routes } from "../../constant";
 import { X } from "lucide-react";
 import { Helmet } from "react-helmet";
 
+export const navlinks = [
+  {
+    path: "/",
+    name: "Home",
+  },
+  {
+    path: "/about-us",
+    name: "About Us",
+  },
+  {
+    path: "/services",
+    name: "Services",
+  },
+  {
+    path: "/blogs",
+    name: "Blogs",
+  },
+  {
+    path: "/contact-us",
+    name: "Contact Us",
+  },
+];
+
 const WebsiteHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { pathname } = useLocation();
-
-  const navLinks = routes.filter(
-    (option) => option.path !== "/contact-us" && option.path !== "/blogs/:id"
-  );
-
-  const smNavLinks = routes.filter((option) => option.path !== "/blogs/:id");
 
   const toggleDrawer = () => {
     setIsOpen(!isOpen);
@@ -43,7 +60,7 @@ const WebsiteHeader = () => {
             />
           </NavLink>
           <div className="lg:flex items-center gap-10 hidden">
-            {navLinks.map((option) => (
+            {navlinks.map((option) => (
               <NavLink
                 to={`${option.path}`}
                 className={`link ${
@@ -81,7 +98,7 @@ const WebsiteHeader = () => {
             </button>
           </div>
           <div className="flex flex-col gap-6">
-            {smNavLinks.map(({ name, path, id }) => (
+            {navlinks.map(({ name, path, id }) => (
               <NavLink
                 onClick={() => setIsOpen(false)}
                 key={id}

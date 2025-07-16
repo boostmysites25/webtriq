@@ -1,5 +1,5 @@
 import React from "react";
-import { companyDetails, logoImg, routes } from "../../constant";
+import { companyDetails, logoImg } from "../../constant";
 import {
   ChevronRight,
   Instagram,
@@ -10,9 +10,9 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import { navlinks } from "./WebsiteHeader";
 
 const WebsiteFooter = () => {
-  const links = routes.filter((option) => option.path !== "/blogs/:id");
   return (
     <div className="py-[3rem]">
       <div className="wrapper flex lg:flex-row flex-col gap-7 sm:gap-14 justify-between">
@@ -62,7 +62,7 @@ const WebsiteFooter = () => {
           <div className="flex flex-col gap-2 text-primary_text">
             <h6 className="font-semibold">Company</h6>
             <ul className="flex flex-col gap-3 mt-1">
-              {links.map(({ path, name }) => (
+              {navlinks.map(({ path, name }) => (
                 <li key={path}>
                   <Link
                     to={path}
