@@ -1,10 +1,11 @@
 import React from "react";
 import { Navigate, useParams } from "react-router-dom";
-import { BlogItem, blogs } from "./Blogs";
+import { BlogItem } from "./Blogs";
+import { blogs } from "../data/blogs";
 import WebsiteHeader from "../components/website/WebsiteHeader";
 import WebsiteFooter from "../components/website/WebsiteFooter";
 import SubHeading from "../components/SubHeading";
-// import { blogs } from "../../data/blogs";
+import "../styles/blog-content.css";
 const PageBanner = React.lazy(() => import("../components/website/PageBanner"));
 
 const BlogDetails = () => {
@@ -33,47 +34,21 @@ const BlogDetails = () => {
                 className="flex justify-between items-center font-light mt-[0.8rem]"
               >
                 <div className="rounded-2xl bg-primary text-white font-medium px-3 py-1 text-sm w-fit">
-                  By Admin
+                  {blog.category}
                 </div>
-                <p className="text-gray-800 text-[.8rem]">12th May 2023</p>
+                <p className="text-gray-800 text-[.8rem]">{blog.date}</p>
               </div>
               <h4
                 data-aos="fade-up"
                 className="heading-2_1 leading-tight mt-[1rem] pb-[1.5rem]"
               >
-                {/* {blog.title} */}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
-                iure neque nihil
+                {blog.title}
               </h4>
-              {/* <div
+              <div
                 dangerouslySetInnerHTML={{ __html: blog.content }}
                 data-aos="fade-up"
-                className="hyphen-auto leading-relaxed text-gray-800 border-t border-primary/30 pt-[2rem]"
-              ></div> */}
-              <p
-                data-aos="fade-up"
-                className="desc hyphen-auto leading-relaxed text-gray-800"
-              >
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Quaerat, porro excepturi et eos corrupti magnam vel voluptatibus
-                aperiam atque voluptatum dolor ullam alias similique hic aliquam
-                provident minima cumque doloremque! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Quaerat, porro excepturi et eos
-                corrupti magnam vel voluptatibus aperiam atque voluptatum dolor
-                ullam alias similique hic aliquam provident minima cumque
-                doloremque! Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Quaerat, porro excepturi et eos corrupti magnam vel
-                voluptatibus aperiam atque voluptatum dolor ullam alias
-                similique hic aliquam provident minima cumque doloremque! Lorem
-                ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-                porro excepturi et eos corrupti magnam vel voluptatibus aperiam
-                atque voluptatum dolor ullam alias similique hic aliquam
-                provident minima cumque doloremque! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Quaerat, porro excepturi et eos
-                corrupti magnam vel voluptatibus aperiam atque voluptatum dolor
-                ullam alias similique hic aliquam provident minima cumque
-                doloremque!
-              </p>
+                className="hyphen-auto leading-relaxed text-gray-800 border-t border-primary/30 pt-[2rem] blog-content-wrapper"
+              ></div>
             </div>
           </div>
           {latestBlogs.length > 0 && (

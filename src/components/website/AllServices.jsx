@@ -37,45 +37,16 @@ const AllServices = () => {
                 <h6 className="text-xl font-medium mt-3">{service.title}</h6>
                 <p className="desc mt-2">{service.description}</p>
               </div>
-              {service.link && (
-                <Link
-                  to={service.link}
-                  // onClick={() => handleSelectServiceToShowDetail(service)}
-                  className="group-hover:bg-secondary text-white font-medium cursor-pointer tracking-wide bg-primary text-sm hover:shadow-primary/25 hover:-translate-y-1 shadow-large shadow-transparent rounded-lg px-4 py-3 min-w-[8rem] flex justify-center text-center transition-all duration-300 mt-5 w-fit mx-auto"
-                >
-                  Discover More
-                </Link>
-              )}
+              <Link
+                to={`/services/${service.title}`}
+                className="group-hover:bg-secondary text-white font-medium cursor-pointer tracking-wide bg-primary text-sm hover:shadow-primary/25 hover:-translate-y-1 shadow-large shadow-transparent rounded-lg px-4 py-3 min-w-[8rem] flex justify-center text-center transition-all duration-300 mt-5 w-fit mx-auto"
+              >
+                {" "}
+                Discover More
+              </Link>
             </div>
           ))}
         </div>
-        <Drawer
-          open={isOpen}
-          onClose={() => setIsOpen(false)}
-          direction="top"
-          className="p-4 z-10 w-screen"
-          lockBackgroundScroll
-        >
-          <div className="mb-3 flex items-center justify-end pr-[.7rem] py-[.4rem]">
-            <button
-              onClick={() => setIsOpen(false)}
-              className="text-primary_text text-[2.2rem]"
-            >
-              <X size={30} />
-            </button>
-          </div>
-          <div className="wrapper flex flex-col gap-6 tex-white pb-[2rem]">
-            <h1 className="heading-2">{selectedService.detailHeading}</h1>
-            <div
-              dangerouslySetInnerHTML={{
-                __html: selectedService.detailContent,
-              }}
-            ></div>
-            {/* <p className="desc whitespace-pre-line">
-              {selectedService.detailContent}
-            </p> */}
-          </div>
-        </Drawer>
       </div>
     </section>
   );

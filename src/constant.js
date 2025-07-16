@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Blogs from "./pages/Blogs";
 import BlogDetails from "./pages/BlogDetails";
+import ServiceDetails from "./pages/ServiceDetails";
 
 // all services
 import { ReactComponent as allServiceIcon1 } from "./assets/svgs/services/Web Development.svg";
@@ -67,6 +68,11 @@ export const routes = [
     path: "/blogs/:id",
     name: "Blog Details",
     element: <BlogDetails />,
+  },
+  {
+    path: "/services/:title",
+    name: "Service Details",
+    element: <ServiceDetails />,
   },
 ];
 
@@ -212,6 +218,27 @@ export const allServices = [
     <p>From sophisticated e-commerce ecosystems to compelling corporate platforms and distinctive portfolio showcases, our web development solutions are engineered to amplify your digital presence and catalyze meaningful user interactions.</p>`,
   },
   {
+    id: 7,
+    title: "Game Development",
+    description:
+      "Creating immersive and engaging gaming experiences through advanced design, development, and technology for various platforms and audiences.",
+    icon: allServiceIcon6,
+    detailHeading:
+      "Game Development: Bringing Your Ideas to Life with Interactive Experiences",
+    detailContent: `<p>Whether you're an indie developer with a fresh idea or a large studio looking to expand your portfolio, we offer comprehensive game development services to bring your vision to life. At Webtriq, we specialize in creating immersive, engaging games for mobile, console, and PC platforms. Our game development services include:</p>
+      <br/>
+      <ol>
+        <li><b>Concept and Story Development:</b><br/>We work with you to develop compelling narratives, unique characters, and engaging gameplay mechanics that keep players coming back.</li>
+        <br/>
+        <li><b>Multi-Platform Development:</b> <br/> Whether it’s Unity or Unreal Engine, we use the latest tools and technologies to ensure your game runs smoothly on all platforms, including iOS, Android, PC, and consoles.</li>
+        <br/>
+        <li><b>2D/3D Design and Animation:</b><br/> Our artists and animators create stunning graphics and immersive environments that enhance the gameplay experience.</li>
+      </ol>
+      <br/>
+      <br/>
+      <p>From mobile games to AAA titles, we are committed to delivering high-quality games that resonate with players and stand out in the market.</p>`,
+  },
+  {
     id: 2,
     title: "App Development",
     link: "/app-development",
@@ -315,27 +342,6 @@ export const allServices = [
       <br/>
       <br/>
       <p>From financial services and supply chain management to healthcare and digital identity, our blockchain solutions help businesses enhance security, reduce costs, and create new levels of transparency and trust.</p>`,
-  },
-  {
-    id: 7,
-    title: "Game Development",
-    description:
-      "Creating immersive and engaging gaming experiences through advanced design, development, and technology for various platforms and audiences.",
-    icon: allServiceIcon6,
-    detailHeading:
-      "Game Development: Bringing Your Ideas to Life with Interactive Experiences",
-    detailContent: `<p>Whether you're an indie developer with a fresh idea or a large studio looking to expand your portfolio, we offer comprehensive game development services to bring your vision to life. At Webtriq, we specialize in creating immersive, engaging games for mobile, console, and PC platforms. Our game development services include:</p>
-      <br/>
-      <ol>
-        <li><b>Concept and Story Development:</b><br/>We work with you to develop compelling narratives, unique characters, and engaging gameplay mechanics that keep players coming back.</li>
-        <br/>
-        <li><b>Multi-Platform Development:</b> <br/> Whether it’s Unity or Unreal Engine, we use the latest tools and technologies to ensure your game runs smoothly on all platforms, including iOS, Android, PC, and consoles.</li>
-        <br/>
-        <li><b>2D/3D Design and Animation:</b><br/> Our artists and animators create stunning graphics and immersive environments that enhance the gameplay experience.</li>
-      </ol>
-      <br/>
-      <br/>
-      <p>From mobile games to AAA titles, we are committed to delivering high-quality games that resonate with players and stand out in the market.</p>`,
   },
 ];
 

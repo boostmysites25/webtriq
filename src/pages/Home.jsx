@@ -41,7 +41,7 @@ const Home = () => {
             data-aos="fade-up"
             className="wrapper text-center flex flex-col gap-4 justify-center items-center h-full relative z-10"
           >
-            <p className="sub-heading">
+            <p className="text-[1.15rem] sm:text-[1.75rem] font-light leading-tight text-primary_text">
               Discover{" "}
               <span className="text-primary font-semibold block sm:inline">
                 Webtriq

@@ -3,47 +3,8 @@ import { Link } from "react-router-dom";
 import WebsiteHeader from "../components/website/WebsiteHeader";
 import WebsiteFooter from "../components/website/WebsiteFooter";
 import SubHeading from "../components/SubHeading";
-// import { blogs } from "../../data/blogs";
+import { blogs } from "../data/blogs";
 const PageBanner = React.lazy(() => import("../components/website/PageBanner"));
-
-export const blogs = [
-  {
-    id: 1,
-    image:
-      "https://rejolut.com/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-20-16.55.07-Create-a-wide-banner-image-for-the-topic-_Top-18-Artificial-Intelligence-AI-Applications-in-2024._-This-image-should-visually-represent-a-diverse-ra-1024x585.webp",
-    title: "The Evolution of AI: Transformative Applications Reshaping Industries in 2024",
-    category: "Artificial Intelligence",
-    date: "June 15, 2024",
-    excerpt: "Explore how cutting-edge AI technologies are revolutionizing business operations across sectors, from predictive analytics and natural language processing to computer vision systems that are redefining what's possible in the digital landscape.",
-  },
-  {
-    id: 2,
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu7-HVWQHxnNuywiR26jyAgbY1vBXIwAAS9w&s",
-    title: "Blockchain Beyond Cryptocurrency: Enterprise Applications Driving Business Transformation",
-    category: "Blockchain",
-    date: "May 28, 2024",
-    excerpt: "Discover how distributed ledger technologies are creating unprecedented levels of transparency and security across supply chains, financial services, and digital identity management systems.",
-  },
-  {
-    id: 3,
-    image:
-      "https://itbrief.com.au/uploads/story/2023/11/27/img-d320oqYWscvU8q8HLX0brOyX.webp",
-    title: "The IoT Revolution: Creating Intelligent Ecosystems for Smart Business Operations",
-    category: "IoT Solutions",
-    date: "April 12, 2024",
-    excerpt: "Learn how interconnected device networks are generating actionable insights, optimizing operational efficiency, and creating new paradigms for customer engagement across manufacturing, healthcare, and retail environments.",
-  },
-  {
-    id: 4,
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GQuewxLfMh2olMxwVIVsJmu1qFf5Q4dwZw&s",
-    title: "Progressive Web Applications: Bridging the Gap Between Web and Mobile Experiences",
-    category: "Web Development",
-    date: "March 5, 2024",
-    excerpt: "Explore how PWAs are revolutionizing digital engagement by combining the best aspects of web and mobile applications to deliver high-performance, offline-capable experiences that drive conversion and retention.",
-  },
-];
 const Blogs = () => {
   return ( 
     <>
@@ -88,7 +49,7 @@ export const BlogItem = ({ blog }) => {
           alt=""
           width="600"
           height="400"
-          className="bg-cover aspect-video w-full rounded-xl group-hover:opacity-85 transition-all duration-200"
+          className="object-cover aspect-video w-full rounded-xl group-hover:opacity-85 transition-all duration-200"
         />
       </Link>
       <div className="flex justify-start font-light mt-[0.8rem]">
