@@ -7,7 +7,7 @@ module.exports = {
         primary: "#022539",
         secondary: "#037DAF",
         primary_text: "#111111",
-        background: "#FBF3F1",
+        background: "#ffffff",
       },
       boxShadow: {
         large: "0px 0px 30px 10px rgba(0, 0, 0, 0.5)",

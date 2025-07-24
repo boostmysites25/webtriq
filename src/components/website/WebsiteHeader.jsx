@@ -42,12 +42,7 @@ const WebsiteHeader = () => {
             {/* Preload the logo image */}
             <NavLink rel="preload" href={logoImg} as="image" type="image/png" />
           </Helmet>
-          <NavLink
-            aria-label="Home"
-            smooth={true}
-            to="/"
-            className="cursor-pointer"
-          >
+          <a aria-label="Home" href="/" className="cursor-pointer">
             <ImageWithSkeleton
               src={logoImg}
               width="75"
@@ -56,7 +51,7 @@ const WebsiteHeader = () => {
               skeletonClassName="w-[8rem] md:w-[10rem] h-[3rem] rounded"
               alt="logo"
             />
-          </NavLink>
+          </a>
           <div className="lg:flex items-center gap-10 hidden">
             {navlinks.map((option) => (
               <NavLink

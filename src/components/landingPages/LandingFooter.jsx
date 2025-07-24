@@ -7,7 +7,7 @@ import ImageWithSkeleton from "../ImageWithSkeleton";
 
 const LandingFooter = () => {
   return (
-    <div className="py-[3rem]">
+    <div className="py-[3rem] bg-background">
       <div className="wrapper flex lg:flex-row flex-col gap-7 justify-between">
         <div className="">
           <Helmet>
