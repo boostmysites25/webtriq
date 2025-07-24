@@ -8,7 +8,7 @@ import { X } from "lucide-react";
 import { Helmet } from "react-helmet";
 import ImageWithSkeleton from "../ImageWithSkeleton";
 
-const options = [
+export const options = [
   {
     name: "About Us",
     path: "about",
@@ -23,7 +23,7 @@ const options = [
   },
 ];
 
-const LandingHeader = () => {
+const LandingHeader = ({ link }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDrawer = () => {
@@ -38,12 +38,7 @@ const LandingHeader = () => {
             {/* Preload the logo image */}
             <link rel="preload" href={logoImg} as="image" type="image/png" />
           </Helmet>
-          <Scroll
-            aria-label="Home"
-            smooth={true}
-            to="banner"
-            className="cursor-pointer"
-          >
+          <a aria-label="Home" href={link} className="cursor-pointer">
             <ImageWithSkeleton
               src={logoImg}
               width="75"
@@ -52,7 +47,7 @@ const LandingHeader = () => {
               skeletonClassName="w-[8rem] md:w-[10rem] h-[3rem] rounded"
               alt="logo"
             />
-          </Scroll>
+          </a>
           <div className="lg:flex items-center gap-10 hidden">
             <Link to="/" className="link">
               Home

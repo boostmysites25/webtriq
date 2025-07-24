@@ -39,20 +39,22 @@ const LandingPage = ({ page }) => {
 
   return (
     <>
-      <LandingHeader />
+      <LandingHeader
+        link={isWebLanding ? "/web-development" : "/app-development"}
+      />
       <section
         id="banner"
-        className="h-screen banner relative text-white"
+        className="h-screen banner relative text-primary_text"
       >
-        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-white/20 via-black/30 to-white/20">
-          <div className="wrapper text-center flex flex-col gap-11 justify-center items-center h-full relative z-10">
+        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background/50 via-background/50 to-background/50">
+          <div className="wrapper text-center flex flex-col gap-11 justify-center items-center h-full relative z-10 translate-y-[2rem]">
             <p
               data-aos="fade-up"
-              className="text-[1.15rem] sm:text-[1.80rem] font-semibold leading-tight text-white"
+              className="text-[1.15rem] sm:text-[1.80rem] font-semibold leading-tight text-primary_text"
             >
               Your Web,{" "}
-              <span className="text-white font-semibold block sm:inline">
-                Our Tricks
+              <span className="text-primary_text font-semibold block sm:inline">
+                Our Trick
               </span>
             </p>
             <h1 className="heading-1 whitespace-pre-line capitalize">
