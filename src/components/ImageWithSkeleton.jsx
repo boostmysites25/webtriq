@@ -10,6 +10,8 @@ const ImageWithSkeleton = ({
   loading = "lazy",
   onLoad,
   onError,
+  showErrorFallback = false,
+  containerStyles = "",
   ...props
 }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -27,39 +29,41 @@ const ImageWithSkeleton = ({
   };
 
   return (
-    <div className="relative overflow-hidden">
-      {/* Skeleton loader */}
-      {isLoading && (
+    <div className={`relative overflow-hidden ${containerStyles}`}>
+      {/* Skeleton loader - show when loading or when error occurs and no fallback wanted */}
+      {(isLoading || (hasError && !showErrorFallback)) && (
         <div
           className={`skeleton absolute inset-0 rounded ${skeletonClassName}`}
-          style={{ 
-            width: width || "100%", 
+          style={{
+            width: width || "100%",
             height: height || "100%",
-            aspectRatio: props.style?.aspectRatio 
+            aspectRatio: props.style?.aspectRatio,
           }}
         />
       )}
-      
-      {/* Error fallback */}
-      {hasError && (
+
+      {/* Error fallback - only show if explicitly enabled */}
+      {hasError && showErrorFallback && (
         <div
           className={`bg-gray-200 flex items-center justify-center text-gray-500 text-sm ${className}`}
-          style={{ 
-            width: width || "100%", 
+          style={{
+            width: width || "100%",
             height: height || "100%",
-            aspectRatio: props.style?.aspectRatio 
+            aspectRatio: props.style?.aspectRatio,
           }}
         >
           <span>Image failed to load</span>
         </div>
       )}
-      
+
       {/* Actual image */}
       {!hasError && (
         <img
           src={src}
           alt={alt}
-          className={`${className} ${isLoading ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
+          className={`${className} ${
+            isLoading ? "opacity-0" : "opacity-100"
+          } transition-opacity duration-300`}
           width={width}
           height={height}
           loading={loading}
@@ -72,4 +76,4 @@ const ImageWithSkeleton = ({
   );
 };
 
-export default ImageWithSkeleton; 
+export default ImageWithSkeleton;

@@ -10,6 +10,7 @@ import {
   Phone,
   Twitter,
 } from "lucide-react";
+import ImageWithSkeleton from "../components/ImageWithSkeleton";
 
 const ThankYou = () => {
   const links = routes.filter((option) => option.path !== "/blogs/:id");
@@ -20,12 +21,12 @@ const ThankYou = () => {
           <div className="wrapper flex justify-between items-center gap-10">
             <div className="flex justify-between items-center gap-20 w-full pl-[1rem] lg:pl-0">
               <Link smooth={true} to="/" className="cursor-pointer">
-                <img
-                  loading="lazy"
+                <ImageWithSkeleton
                   src={logoImg}
                   width={150}
                   height={150}
                   className="h-[3rem] md:h-[3.75rem] scale-125"
+                  skeletonClassName="h-[3rem] md:h-[3.75rem] w-[8rem] rounded scale-125"
                   alt="logo"
                 />
               </Link>
@@ -49,12 +50,12 @@ const ThankYou = () => {
       <div className="py-[3rem]">
         <div className="wrapper flex lg:flex-row flex-col gap-7 sm:gap-14 justify-between">
           <div className="">
-            <img
+            <ImageWithSkeleton
               width={150}
               height={150}
-              loading="lazy"
               src={logoImg}
               className="w-[10rem]"
+              skeletonClassName="w-[10rem] h-[3rem] rounded"
               alt="logo"
             />
             <p className="desc !text-sm max-w-[22rem] mt-3">

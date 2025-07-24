@@ -29,7 +29,7 @@ const Portfolio = ({ page }) => {
             <div
               data-aos="fade-up"
               key={id}
-              className="p-3 border-2 border-secondary group rounded-xl aspect-square shadow-inner_shadow shadow-secondary/20"
+              className="group w-full rounded-xl aspect-square shadow-inner_shadow shadow-secondary/20"
             >
               <div className="overflow-hidden relative h-full rounded-xl">
                 <div className="absolute z-[5] top-0 w-full h-full bg-gradient-to-b from-transparent to-primary/20"></div>

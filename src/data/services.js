@@ -1042,7 +1042,7 @@ export const services = [
     description:
       "Transform your customer engagement with intelligent AI-powered calling solutions that automate outreach while maintaining a personal touch.",
     icon: allServiceIcon4,
-    image: require("../assets/images/services/ai-calling-agency.webp"),
+    image: require("../assets/images/services/ai-development.webp"),
     detailHeading:
       "AI Calling Agency: Revolutionizing Customer Communication with Intelligent Voice AI",
     content: `

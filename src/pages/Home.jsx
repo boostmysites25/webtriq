@@ -8,6 +8,7 @@ import { ReactComponent as Icon2 } from "../assets/svgs/services/App Development
 import { ReactComponent as Icon3 } from "../assets/svgs/services/Machine Learning Solutions.svg";
 import WorkProcess from "../components/WorkProcess";
 import ReactPlayer from "react-player";
+import ImageWithSkeleton from "../components/ImageWithSkeleton";
 
 import bannerthump from "../assets/vids/banner-thump.webp";
 
@@ -38,7 +39,7 @@ const Home = () => {
     <>
       <WebsiteHeader />
       <section className="h-screen banner relative text-white">
-        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-black/20 via-black/20 to-black/20">
+        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-white/20 via-white/50 to-white/20">
           <div
             data-aos="fade-up"
             className="wrapper text-center flex flex-col gap-4 justify-center items-center h-full relative z-10"
@@ -52,12 +53,6 @@ const Home = () => {
             <h1 className="heading capitalize">
               Elevating Digital Experiences <br /> Through Innovation
             </h1>
-            <p className="sub-heading !text-white max-w-6xl">
-              Embark on a transformative digital journey with Webtriq's
-              sophisticated solutions. Our strategic approach and technical
-              excellence position your organization for sustained success in an
-              increasingly complex digital ecosystem.
-            </p>
           </div>
         </div>
         <div
@@ -146,13 +141,14 @@ const Home = () => {
         <div className="wrapper py-[3rem]">
           <div className="grid lg:grid-cols-2 gap-10 mt-7">
             <div data-aos="fade-up" className="hidden lg:flex flex-col">
-              <img
-                loading="lazy"
+              <ImageWithSkeleton
                 src={aboutImg}
                 width="600"
                 height="400"
                 className="object-cover aspect-video h-full rounded-lg w-full object-center"
+                skeletonClassName="aspect-video h-full rounded-lg w-full"
                 alt=""
+                containerStyles="h-full"
               />
             </div>
             <div
@@ -163,14 +159,14 @@ const Home = () => {
                 <SubHeading heading="About Us" />
                 <div
                   data-aos="fade-up"
-                  className="h-[20em] sm:h-[25rem] lg:hidden mb-4 w-full"
+                  className="h-[20em] sm:h-[25rem] lg:hidden mb-4 w-full overflow-hidden rounded-lg"
                 >
-                  <img
-                    loading="lazy"
+                  <ImageWithSkeleton
                     src={aboutImg}
                     width="200"
                     height="200"
                     className="object-cover h-full object-center rounded-lg w-full"
+                    skeletonClassName="h-full rounded-lg w-full"
                     alt=""
                   />
                 </div>

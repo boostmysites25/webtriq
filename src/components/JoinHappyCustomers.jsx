@@ -33,13 +33,13 @@ const JoinHappyCustomers = () => {
       },
       "(min-width: 1024px)": {
         slides: {
-          perView: 5,
+          perView: 4,
           spacing: 30,
         },
       },
       "(min-width: 1280px)": {
         slides: {
-          perView: 6,
+          perView: 5.5,
           spacing: 30,
         },
       },
@@ -63,7 +63,7 @@ const JoinHappyCustomers = () => {
       <div className="relative z-10">
         <div data-aos="fade-up" className="wrapper">
           <h2 className="heading-2 max-w-[60rem] mx-auto text-center">
-            Join Our <span className="text-secondary">20+</span> Happy Clients
+            Join Our <span className="text-secondary">80+</span> Happy Clients
           </h2>
         </div>
         <div data-aos="fade-up" ref={sliderRef} className="keen-slider mt-9">
@@ -71,15 +71,15 @@ const JoinHappyCustomers = () => {
             (img, index) => (
               <div
                 key={index}
-                className="keen-slider__slide flex justify-center px-3 bg-white rounded-full"
+                className="keen-slider__slide flex justify-center bg-white rounded-full"
               >
                 <ImageWithSkeleton
-                  width="200"
+                  width=""
                   height="100"
                   src={img}
                   alt="featured in"
-                  className="object-contain"
-                  skeletonClassName="bg-white rounded-full"
+                  className="object-contain px-3"
+                  skeletonClassName="bg-white rounded-full px-3"
                 />
               </div>
             )
