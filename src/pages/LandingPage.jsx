@@ -42,17 +42,17 @@ const LandingPage = ({ page }) => {
       <LandingHeader />
       <section
         id="banner"
-        className="h-screen banner relative text-primary_text"
+        className="h-screen banner relative text-white"
       >
-        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background via-background/20 to-background">
-          <div
-            data-aos="fade-up"
-            className="wrapper text-center flex flex-col gap-5 justify-center items-center h-full relative z-10"
-          >
-            <p className="sub-heading">
-              Welcome to{" "}
-              <span className="text-primary font-semibold block sm:inline">
-                Webtriq
+        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-white/20 via-black/30 to-white/20">
+          <div className="wrapper text-center flex flex-col gap-11 justify-center items-center h-full relative z-10">
+            <p
+              data-aos="fade-up"
+              className="text-[1.15rem] sm:text-[1.80rem] font-semibold leading-tight text-white"
+            >
+              Your Web,{" "}
+              <span className="text-white font-semibold block sm:inline">
+                Our Tricks
               </span>
             </p>
             <h1 className="heading-1 whitespace-pre-line capitalize">
@@ -60,11 +60,6 @@ const LandingPage = ({ page }) => {
                 ? "Elevate your business with cutting-edge Website Development"
                 : "Innovation-Driven App Development Services"}
             </h1>
-            <p className="sub-heading max-w-6xl mx-auto">
-              Transform your business with our advanced IT services, enhancing
-              efficiency, agility, and growth in today's fast-paced digital
-              world.
-            </p>
           </div>
         </div>
         <ReactPlayer

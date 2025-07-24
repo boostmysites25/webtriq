@@ -44,7 +44,7 @@ html {
     @apply text-[2.25rem] md:text-[4.35rem] font-semibold !leading-[1.15];
   }
   .heading-1 {
-    @apply text-[2.25rem] md:text-[3.75rem] font-semibold !leading-tight;
+    @apply text-[2.25rem] md:text-[4rem] font-semibold !leading-tight;
   }
   .heading-2 {
     @apply text-[2rem] md:text-[2.75rem] font-semibold !leading-tight text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text;
