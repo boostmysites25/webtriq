@@ -5,6 +5,7 @@ import SubHeading from "../components/SubHeading";
 import aboutImg1 from "../assets/images/aboutus-img1.webp";
 import aboutImg2 from "../assets/images/aboutus-img2.webp";
 import aboutImg3 from "../assets/images/home-about-img.jpeg";
+import ImageWithSkeleton from "../components/ImageWithSkeleton";
 // import teamImg1 from "../assets/images/team1.jpeg";
 // import teamImg2 from "../assets/images/team2.jpeg";
 // import teamImg3 from "../assets/images/team3.jpeg";
@@ -39,10 +40,10 @@ const AboutUs = () => {
       <section className="text-primary_text wrapper py-[3rem]">
         <div className="grid lg:grid-cols-2 gap-10 mt-7">
           <div data-aos="fade-up" className="hidden lg:block h-full">
-            <img
-              loading="lazy"
+            <ImageWithSkeleton
               src={aboutImg1}
               className="object-cover h-full rounded-lg"
+              skeletonClassName="rounded-lg h-full"
               alt=""
             />
           </div>
@@ -56,10 +57,10 @@ const AboutUs = () => {
                 data-aos="fade-up"
                 className="h-[20em] sm:h-[25rem] lg:hidden mb-4 w-full"
               >
-                <img
-                  loading="lazy"
+                <ImageWithSkeleton
                   src={aboutImg1}
                   className="object-cover h-full rounded-lg w-full"
+                  skeletonClassName="rounded-lg h-full"
                   alt=""
                 />
               </div>

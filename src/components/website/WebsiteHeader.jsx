@@ -5,6 +5,7 @@ import { NavLink, useLocation } from "react-router-dom";
 import { logoImg, routes } from "../../constant";
 import { X } from "lucide-react";
 import { Helmet } from "react-helmet";
+import ImageWithSkeleton from "../ImageWithSkeleton";
 
 export const navlinks = [
   {
@@ -47,11 +48,12 @@ const WebsiteHeader = () => {
             to="/"
             className="cursor-pointer"
           >
-            <img
+            <ImageWithSkeleton
               src={logoImg}
               width="75"
               height="75"
-              className="w-[6rem] md:w-[8rem] scale-125 object-contain"
+              className="w-[8rem] md:w-[10rem] object-contain"
+              skeletonClassName="w-[8rem] md:w-[10rem] h-[3rem] rounded"
               alt="logo"
             />
           </NavLink>

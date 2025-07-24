@@ -7,6 +7,7 @@ import TrustWorthySection from "../components/TrustWorthySection";
 import appDevAboutImg from "../assets/images/landingpage/app-dev-about.webp";
 import webDevAboutImg from "../assets/images/landingpage/web-dev-about.jpeg";
 import ReactPlayer from "react-player";
+import ImageWithSkeleton from "../components/ImageWithSkeleton";
 
 const LandingHeader = lazy(() =>
   import("../components/landingPages/LandingHeader")
@@ -89,10 +90,10 @@ const LandingPage = ({ page }) => {
       <section id="about" className="text-primary_text wrapper pt-[3rem]">
         <div className="grid lg:grid-cols-2 gap-10 mt-7">
           <div data-aos="fade-up" className="hidden lg:block h-full">
-            <img
-              loading="lazy"
+            <ImageWithSkeleton
               src={isWebLanding ? webDevAboutImg : appDevAboutImg}
               className="object-cover h-full rounded-lg"
+              skeletonClassName="rounded-lg h-full"
               alt="about us"
               width="600"
               height="400"
@@ -110,10 +111,10 @@ const LandingPage = ({ page }) => {
                 data-aos="fade-up"
                 className="h-[20em] sm:h-[25rem] lg:hidden mb-4 w-full"
               >
-                <img
-                  loading="lazy"
+                <ImageWithSkeleton
                   src={isWebLanding ? webDevAboutImg : appDevAboutImg}
                   className="object-cover h-full rounded-lg w-full"
+                  skeletonClassName="rounded-lg h-full"
                   alt="about"
                   width="200"
                   height="200"

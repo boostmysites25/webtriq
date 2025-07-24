@@ -11,6 +11,7 @@ import img7 from "../assets/images/client-logos/7.png";
 import img8 from "../assets/images/client-logos/8.png";
 import img9 from "../assets/images/client-logos/9.png";
 import img10 from "../assets/images/client-logos/10.png";
+import ImageWithSkeleton from "./ImageWithSkeleton";
 
 const animation = { duration: 10000, easing: (t) => t };
 
@@ -62,7 +63,7 @@ const JoinHappyCustomers = () => {
       <div className="relative z-10">
         <div data-aos="fade-up" className="wrapper">
           <h2 className="heading-2 max-w-[60rem] mx-auto text-center">
-            Join Our <span className="text-secondary">80+</span> Happy Clients
+            Join Our <span className="text-secondary">20+</span> Happy Clients
           </h2>
         </div>
         <div data-aos="fade-up" ref={sliderRef} className="keen-slider mt-9">
@@ -72,13 +73,13 @@ const JoinHappyCustomers = () => {
                 key={index}
                 className="keen-slider__slide flex justify-center px-3 bg-white rounded-full"
               >
-                <img
+                <ImageWithSkeleton
                   width="200"
                   height="100"
-                  loading="lazy"
                   src={img}
                   alt="featured in"
                   className="object-contain"
+                  skeletonClassName="bg-white rounded-full"
                 />
               </div>
             )

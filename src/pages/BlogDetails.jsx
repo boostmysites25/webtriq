@@ -1,32 +1,34 @@
 import React from "react";
-import { Navigate, useParams } from "react-router-dom";
-import { BlogItem } from "./Blogs";
+import { useParams } from "react-router-dom";
 import { blogs } from "../data/blogs";
 import WebsiteHeader from "../components/website/WebsiteHeader";
 import WebsiteFooter from "../components/website/WebsiteFooter";
 import SubHeading from "../components/SubHeading";
-import "../styles/blog-content.css";
-const PageBanner = React.lazy(() => import("../components/website/PageBanner"));
+import { BlogItem } from "./Blogs";
+import ImageWithSkeleton from "../components/ImageWithSkeleton";
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const blog = blogs.find((item) => item.id === Number(id));
+  const blog = blogs.find((blog) => blog.id === parseInt(id));
+  
+  const latestBlogs = blogs.filter((item) => item.id !== blog.id).slice(0, 3);
+
   if (!blog) {
-    return <Navigate to="/blogs" />;
+    return <div>Blog not found</div>;
   }
-  const latestBlogs = blogs.filter((item) => item.id !== Number(id)) || [];
+
   return (
     <>
       <WebsiteHeader />
-      <PageBanner title="Blog Details" />
       <div className="bg-primary/5 relative text-primary_text">
         <div className="wrapper py-[5rem] relative z-10">
           <div className="flex flex-col gap-2 pb-[3rem] p-3 sm:p-5 bg-secondary/10 rounded-xl mb-[3rem]">
-            <img
+            <ImageWithSkeleton
               data-aos="fade-up"
               src={blog.image}
               alt=""
               className="w-full rounded-xl object-cover aspect-[4/3] max-h-[70vh]"
+              skeletonClassName="rounded-xl aspect-[4/3] max-h-[70vh]"
             />
             <div className="flex flex-col gap-2">
               <div

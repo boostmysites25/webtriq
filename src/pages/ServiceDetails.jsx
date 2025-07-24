@@ -5,6 +5,9 @@ import WebsiteHeader from "../components/website/WebsiteHeader";
 import WebsiteFooter from "../components/website/WebsiteFooter";
 import SubHeading from "../components/SubHeading";
 import "../styles/blog-content.css";
+import { ChevronRight } from "lucide-react";
+import { Link } from "react-router-dom";
+import ImageWithSkeleton from "../components/ImageWithSkeleton";
 const PageBanner = React.lazy(() => import("../components/website/PageBanner"));
 
 const ServiceDetails = () => {
@@ -51,11 +54,12 @@ const ServiceDetails = () => {
               </div>
               <div className="order-1 lg:order-2">
                 <div className="relative">
-                  <img
+                  <ImageWithSkeleton
                     data-aos="fade-left"
                     src={service.image}
                     alt={service.title}
                     className="w-full rounded-2xl object-cover aspect-[4/3] shadow-2xl"
+                    skeletonClassName="rounded-2xl aspect-[4/3]"
                   />
                   <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center shadow-lg">
                     <service.icon className="w-12 h-12 text-white fill-white" />

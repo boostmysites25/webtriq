@@ -2,6 +2,7 @@ import React from "react";
 import ourValuesIcon1 from "../../assets/images/icons/innovation&excellence.png";
 import ourValuesIcon2 from "../../assets/images/icons/integrity&transparency.png";
 import SubHeading from "../SubHeading";
+import ImageWithSkeleton from "../ImageWithSkeleton";
 
 const OurValue = () => {
   return (
@@ -21,10 +22,10 @@ const OurValue = () => {
           </p>
           <div data-aos="fade-up" className="flex gap-5 mt-2">
             <div className="min-w-[4rem] h-[4rem] bg-secondary rounded-full flex items-center justify-center">
-              <img
-                loading="lazy"
+              <ImageWithSkeleton
                 src={ourValuesIcon1}
                 className="w-[2rem] object-contain"
+                skeletonClassName="w-[2rem] h-[2rem] rounded"
                 alt=""
               />
             </div>
@@ -37,10 +38,10 @@ const OurValue = () => {
           </div>
           <div data-aos="fade-up" className="flex gap-5">
             <div className="min-w-[4rem] h-[4rem] bg-secondary rounded-full flex items-center justify-center">
-              <img
-                loading="lazy"
+              <ImageWithSkeleton
                 src={ourValuesIcon2}
                 className="w-[2rem] object-contain"
+                skeletonClassName="w-[2rem] h-[2rem] rounded"
                 alt=""
               />
             </div>

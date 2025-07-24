@@ -47,7 +47,7 @@ html {
     @apply text-[2.75rem] md:text-[3.75rem] font-semibold leading-tight;
   }
   .heading-2 {
-    @apply text-[2.25rem] md:text-[2.5rem] font-semibold leading-tight text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text;
+    @apply text-[2.25rem] md:text-[2.75rem] font-semibold leading-tight text-transparent bg-gradient-to-r from-primary to-secondary bg-clip-text;
   }
   .heading-2_2 {
     @apply text-[2.25rem] md:text-[2.5rem] font-semibold leading-tight text-transparent bg-gradient-to-r from-secondary to-background bg-clip-text;
@@ -158,6 +158,28 @@ html {
   }
   100% {
     transform: rotate(-360deg);
+  }
+}
+
+/* Skeleton Loading Styles */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+.skeleton-dark {
+  background: linear-gradient(90deg, #e0e0e0 25%, #d0d0d0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
   }
 }
 

@@ -3,6 +3,7 @@ import { useKeenSlider } from "keen-slider/react";
 import { testimonials } from "../constant";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import SubHeading from "./SubHeading";
+import ImageWithSkeleton from "./ImageWithSkeleton";
 
 const Testimonials = () => {
   const animation = { duration: 30000, easing: (t) => t };
@@ -135,11 +136,13 @@ const Testimonials = () => {
                 <p className="italic text-balance">{item.desc}</p>
                 <div className="flex flex-col gap-2 mt-2">
                   <div className="flex flex-col items-center gap-1 h-full">
-                    <img
-                      loading="lazy"
+                    <ImageWithSkeleton
                       src={item.img}
                       alt={item.name}
                       className="h-[3rem] w-[3rem] rounded-full object-cover border-2 border-primary"
+                      skeletonClassName="rounded-full"
+                      width="48"
+                      height="48"
                     />
                     <p className="font-medium mt-1">{item.name}</p>
                     <p className="text-sm">{item.position}</p>

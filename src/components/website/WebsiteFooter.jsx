@@ -11,6 +11,7 @@ import {
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { navlinks } from "./WebsiteHeader";
+import ImageWithSkeleton from "../ImageWithSkeleton";
 
 const WebsiteFooter = () => {
   return (
@@ -21,14 +22,15 @@ const WebsiteFooter = () => {
             {/* Preload the logo image */}
             <link rel="preload" href={logoImg} as="image" type="image/png" />
           </Helmet>
-          <img
+          <ImageWithSkeleton
             width="200"
             height="50"
             src={logoImg}
             className="w-[12rem] object-contain"
+            skeletonClassName="w-[12rem] h-[3rem] rounded"
             alt="logo"
           />
-          <p className="desc !text-sm max-w-[22rem] mt-3">
+          <p className="desc ! max-w-[22rem] mt-3">
             At Webtriq, we're dedicated to driving your business forward
             with innovative software solutions. With a passion for technology
             and a commitment to excellence, we specialize in delivering tailored
@@ -38,21 +40,21 @@ const WebsiteFooter = () => {
             <Link
               aria-label="Contact us on Instagram"
               to={companyDetails.instagram}
-              className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
+              className="w-[2rem] h-[2rem] rounded-full p-2 bg-white border border-primary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
             >
               <Instagram strokeWidth={1.5} size={20} />
             </Link>
             <Link
               aria-label="Contact us on Twitter"
               to={companyDetails.twitter}
-              className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
+              className="w-[2rem] h-[2rem] rounded-full p-2 bg-white border border-primary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
             >
               <Twitter strokeWidth={1.5} size={20} />
             </Link>
             <Link
               aria-label="Contact us on LinkedIn"
               to={companyDetails.linkedin}
-              className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
+              className="w-[2rem] h-[2rem] rounded-full p-2 bg-white border border-primary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
             >
               <Linkedin strokeWidth={1.5} size={20} />
             </Link>
@@ -69,7 +71,7 @@ const WebsiteFooter = () => {
                     className="max-w-[22rem] flex gap-2 items-center text-primary_text/70 hover:text-primary transition-colors duration-200"
                   >
                     <ChevronRight size={17} strokeWidth={3} />
-                    <span className="text-sm">{name}</span>
+                    <span className="">{name}</span>
                   </Link>
                 </li>
               ))}
@@ -84,7 +86,7 @@ const WebsiteFooter = () => {
                   size={20}
                   className="text-primary inline min-w-5"
                 />{" "}
-                <span className="text-sm">{companyDetails.address}</span>
+                <span className="">{companyDetails.address}</span>
               </li> */}
               <li className="flex gap-3 text-primary_text/70">
                 <Link
@@ -97,7 +99,7 @@ const WebsiteFooter = () => {
                     size={20}
                     className="text-primary inline"
                   />{" "}
-                  <span className="text-sm">{companyDetails.email}</span>
+                  <span className="">{companyDetails.email}</span>
                 </Link>
               </li>
               <li>
@@ -111,7 +113,7 @@ const WebsiteFooter = () => {
                     size={20}
                     className="text-primary inline"
                   />{" "}
-                  <span className="text-sm">{companyDetails.phone}</span>
+                  <span className="">{companyDetails.phone}</span>
                 </Link>
               </li>
             </ul>

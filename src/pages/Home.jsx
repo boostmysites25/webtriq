@@ -1,5 +1,4 @@
-import React from "react";
-import bannerImg from "../assets/images/banner.webp";
+import React, { useState } from "react";
 import vid from "../assets/vids/banner.mp4";
 import aboutImg from "../assets/images/aboutus-img3.webp";
 import { Link } from "react-router-dom";
@@ -9,6 +8,8 @@ import { ReactComponent as Icon2 } from "../assets/svgs/services/App Development
 import { ReactComponent as Icon3 } from "../assets/svgs/services/Machine Learning Solutions.svg";
 import WorkProcess from "../components/WorkProcess";
 import ReactPlayer from "react-player";
+
+import bannerthump from "../assets/vids/banner-thump.webp";
 
 const WebsiteHeader = React.lazy(() =>
   import("../components/website/WebsiteHeader")
@@ -32,6 +33,7 @@ const WhyChooseUs = React.lazy(() => import("../components/WhyChooseUs"));
 const LeadForm = React.lazy(() => import("../components/LeadForm"));
 
 const Home = () => {
+  const [bannerLoading, setBannerLoading] = useState(true);
   return (
     <>
       <WebsiteHeader />
@@ -41,7 +43,7 @@ const Home = () => {
             data-aos="fade-up"
             className="wrapper text-center flex flex-col gap-4 justify-center items-center h-full relative z-10"
           >
-            <p className="text-[1.15rem] sm:text-[1.50rem] font-light leading-tight text-white">
+            <p className="text-[1.15rem] sm:text-[1.80rem] font-light leading-tight text-white">
               Your Web,{" "}
               <span className="text-white font-semibold block sm:inline">
                 Our Tricks
@@ -58,24 +60,38 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <ReactPlayer
-          url={vid}
-          playing
-          muted
-          playsinline
-          loop
-          pip={false}
-          width="100%"
-          height="100%"
-          config={{
-            file: {
-              attributes: {
-                style: {
-                  objectFit: "cover",
+        <div
+          className={`${
+            bannerLoading ? "opacity-0" : "opacity-100"
+          } absolute inset-0 h-full w-full bg-gradient-to-b from-black/20 via-black/20 to-black/20`}
+        >
+          <ReactPlayer
+            url={vid}
+            playing
+            muted
+            playsinline
+            loop
+            pip={false}
+            onReady={() => setBannerLoading(false)}
+            width="100%"
+            height="100%"
+            config={{
+              file: {
+                attributes: {
+                  style: {
+                    objectFit: "cover",
+                  },
                 },
               },
-            },
-          }}
+            }}
+          />
+        </div>
+        <img
+          src={bannerthump}
+          alt=""
+          className={`absolute top-0 left-0 w-full h-full object-cover ${
+            bannerLoading ? "opacity-100" : "opacity-0"
+          }`}
         />
       </section>
       <div
@@ -162,8 +178,8 @@ const Home = () => {
                   Turning Bold Ideas Into Digital Reality
                 </h2>
                 <p className="desc">
-                  At <span className="font-medium text-primary">Webtriq</span>
-                  , we're passionate about propelling your enterprise forward
+                  At <span className="font-medium text-primary">Webtriq</span>,
+                  we're passionate about propelling your enterprise forward
                   through cutting-edge digital solutions. Combining technical
                   expertise with creative vision, we craft bespoke digital
                   products that address your specific challenges and objectives.{" "}

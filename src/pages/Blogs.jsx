@@ -4,6 +4,7 @@ import WebsiteHeader from "../components/website/WebsiteHeader";
 import WebsiteFooter from "../components/website/WebsiteFooter";
 import SubHeading from "../components/SubHeading";
 import { blogs } from "../data/blogs";
+import ImageWithSkeleton from "../components/ImageWithSkeleton";
 const PageBanner = React.lazy(() => import("../components/website/PageBanner"));
 const Blogs = () => {
   return ( 
@@ -44,12 +45,13 @@ export const BlogItem = ({ blog }) => {
       className="bg-secondary/10 rounded-xl p-5 text-primary_text relative z-10 group"
     >
       <Link to={`/blogs/${blog.id}`}>
-        <img
+        <ImageWithSkeleton
           src={blog.image}
           alt=""
           width="600"
           height="400"
           className="object-cover aspect-video w-full rounded-xl group-hover:opacity-85 transition-all duration-200"
+          skeletonClassName="rounded-xl aspect-video"
         />
       </Link>
       <div className="flex justify-start font-light mt-[0.8rem]">
