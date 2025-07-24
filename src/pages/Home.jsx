@@ -58,7 +58,7 @@ const Home = () => {
         <div
           className={`${
             bannerLoading ? "opacity-0" : "opacity-100"
-          } absolute inset-0 h-full w-full bg-gradient-to-b from-black/20 via-black/20 to-black/20`}
+          } absolute inset-0 h-full w-full bg-gradient-to-b from-white/20 via-white/50 to-white/20`}
         >
           <ReactPlayer
             url={vid}
