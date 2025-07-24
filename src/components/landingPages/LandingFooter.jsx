@@ -72,6 +72,7 @@ const LandingFooter = () => {
                     to={path}
                     smooth={true}
                     duration={500}
+                    offset={-60}
                     className="max-w-[22rem] flex gap-2 items-center text-primary_text/70 hover:text-primary transition-colors duration-200"
                   >
                     <ChevronRight size={17} strokeWidth={3} />

@@ -76,6 +76,15 @@ const WebsiteFooter = () => {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  to="/contact-us"
+                  className="max-w-[22rem] flex gap-2 items-center text-primary_text/70 hover:text-primary transition-colors duration-200"
+                >
+                  <ChevronRight size={17} strokeWidth={3} />
+                  <span className="">Contact Us</span>
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="flex flex-col gap-2 text-primary_text">
