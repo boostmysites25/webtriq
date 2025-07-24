@@ -57,7 +57,10 @@ const LandingPage = ({ page }) => {
                 Our Trick
               </span>
             </p>
-            <h1 className="heading-1 whitespace-pre-line capitalize">
+            <h1
+              data-aos="fade-up"
+              className="heading-1 whitespace-pre-line capitalize"
+            >
               {isWebLanding
                 ? "Elevate your business with cutting-edge Website Development"
                 : "Innovation-Driven App Development Services"}
