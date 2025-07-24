@@ -35,25 +35,26 @@ const Home = () => {
   return (
     <>
       <WebsiteHeader />
-      <section className="h-screen banner relative text-primary_text">
-        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background/20 via-background to-background/20">
+      <section className="h-screen banner relative text-white">
+        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-black/20 via-black/20 to-black/20">
           <div
             data-aos="fade-up"
             className="wrapper text-center flex flex-col gap-4 justify-center items-center h-full relative z-10"
           >
-            <p className="text-[1.15rem] sm:text-[1.75rem] font-light leading-tight text-primary_text">
-              Discover{" "}
-              <span className="text-primary font-semibold block sm:inline">
-                Webtriq
+            <p className="text-[1.15rem] sm:text-[1.50rem] font-light leading-tight text-white">
+              Your Web,{" "}
+              <span className="text-white font-semibold block sm:inline">
+                Our Tricks
               </span>
             </p>
             <h1 className="heading capitalize">
               Elevating Digital Experiences <br /> Through Innovation
             </h1>
-            <p className="sub-heading max-w-6xl">
-              Embark on a transformative digital journey with Webtriq's sophisticated solutions.
-              Our strategic approach and technical excellence position your organization 
-              for sustained success in an increasingly complex digital ecosystem.
+            <p className="sub-heading !text-white max-w-6xl">
+              Embark on a transformative digital journey with Webtriq's
+              sophisticated solutions. Our strategic approach and technical
+              excellence position your organization for sustained success in an
+              increasingly complex digital ecosystem.
             </p>
           </div>
         </div>
@@ -91,8 +92,8 @@ const Home = () => {
             <p className="text-lg leading-tight font-medium">Web Development</p>
           </div>
           <p className="desc">
-            Create captivating, performance-optimized websites that showcase your 
-            unique brand identity and drive meaningful user engagement.
+            Create captivating, performance-optimized websites that showcase
+            your unique brand identity and drive meaningful user engagement.
           </p>
         </div>
         <div className="bg-primary rounded-lg backdrop-blur-sm text-background p-5">
@@ -102,13 +103,11 @@ const Home = () => {
               height="50"
               className="w-[4rem] h-[4rem] fill-secondary"
             />
-            <p className="text-lg leading-tight font-medium">
-              App Development
-            </p>
+            <p className="text-lg leading-tight font-medium">App Development</p>
           </div>
           <p className="desc">
-            Build intuitive, feature-rich mobile applications for iOS and Android 
-            that transform your ideas into seamless digital experiences.
+            Build intuitive, feature-rich mobile applications for iOS and
+            Android that transform your ideas into seamless digital experiences.
           </p>
         </div>
         <div className="bg-primary rounded-lg backdrop-blur-sm text-background p-5">
@@ -121,8 +120,9 @@ const Home = () => {
             <p className="text-lg leading-tight font-medium">AI Development</p>
           </div>
           <p className="desc">
-            Leverage advanced AI technologies to streamline operations, unlock 
-            data-driven insights, and create intelligent systems that evolve with your business.
+            Leverage advanced AI technologies to streamline operations, unlock
+            data-driven insights, and create intelligent systems that evolve
+            with your business.
           </p>
         </div>
       </div>
@@ -162,19 +162,18 @@ const Home = () => {
                   Turning Bold Ideas Into Digital Reality
                 </h2>
                 <p className="desc">
-                  At{" "}
-                  <span className="font-medium text-primary">
-                    Webtriq
-                  </span>
-                  , we're passionate about propelling your enterprise forward through 
-                  cutting-edge digital solutions. Combining technical expertise with 
-                  creative vision, we craft bespoke digital products that address your 
-                  specific challenges and objectives. <br /> <br /> Our purpose is to 
-                  transform industries through strategic technology implementation, 
-                  enabling organizations to excel in the digital-first era. <br /> <br /> 
-                  We champion the transformative power of innovation. Our team works 
-                  tirelessly to build compelling digital experiences that amplify your 
-                  brand voice and connect authentically with your audience.
+                  At <span className="font-medium text-primary">Webtriq</span>
+                  , we're passionate about propelling your enterprise forward
+                  through cutting-edge digital solutions. Combining technical
+                  expertise with creative vision, we craft bespoke digital
+                  products that address your specific challenges and objectives.{" "}
+                  <br /> <br /> Our purpose is to transform industries through
+                  strategic technology implementation, enabling organizations to
+                  excel in the digital-first era. <br /> <br />
+                  We champion the transformative power of innovation. Our team
+                  works tirelessly to build compelling digital experiences that
+                  amplify your brand voice and connect authentically with your
+                  audience.
                 </p>
               </div>
               <div className="w-fit mt-4 justify-start">

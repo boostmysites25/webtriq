@@ -1035,4 +1035,150 @@ export const services = [
       </div>
     `,
   },
+  {
+    id: 8,
+    title: "AI Calling Agency",
+    link: "/ai-calling-agency",
+    description:
+      "Transform your customer engagement with intelligent AI-powered calling solutions that automate outreach while maintaining a personal touch.",
+    icon: allServiceIcon4,
+    image: require("../assets/images/services/ai-calling-agency.webp"),
+    detailHeading:
+      "AI Calling Agency: Revolutionizing Customer Communication with Intelligent Voice AI",
+    content: `
+      <div class="service-content">
+        <h2>AI-Powered Calling Solutions</h2>
+        <p>In today's fast-paced business environment, maintaining meaningful customer connections at scale is crucial. Our AI Calling Agency service leverages cutting-edge voice AI technology to deliver personalized, efficient, and scalable communication solutions that help businesses engage with their customers more effectively.</p>
+        
+        <h2>Our AI Calling Services</h2>
+        
+        <h3>Automated Outreach Campaigns</h3>
+        <p>Intelligent outbound calling solutions for various business needs:</p>
+        <ul>
+          <li><strong>Lead Generation:</strong> Qualify and nurture leads through AI-driven conversations</li>
+          <li><strong>Appointment Scheduling:</strong> Automated booking and confirmation calls</li>
+          <li><strong>Customer Surveys:</strong> Gather feedback and insights at scale</li>
+          <li><strong>Event Reminders:</strong> Automated event and appointment reminders</li>
+        </ul>
+        
+        <h3>Conversational AI Development</h3>
+        <p>Sophisticated voice AI solutions that sound natural and human-like:</p>
+        <ul>
+          <li><strong>Natural Language Processing:</strong> Advanced language understanding capabilities</li>
+          <li><strong>Voice Synthesis:</strong> High-quality, natural-sounding voice generation</li>
+          <li><strong>Contextual Understanding:</strong> Smart response handling based on conversation context</li>
+          <li><strong>Multi-language Support:</strong> Support for multiple languages and dialects</li>
+        </ul>
+        
+        <h3>Customer Service Automation</h3>
+        <p>24/7 customer support through intelligent voice AI:</p>
+        <ul>
+          <li><strong>Query Resolution:</strong> Automated handling of common customer inquiries</li>
+          <li><strong>Service Requests:</strong> Process and track customer service requests</li>
+          <li><strong>Escalation Management:</strong> Smart routing to human agents when needed</li>
+          <li><strong>Follow-up Calls:</strong> Automated follow-up for service quality assurance</li>
+        </ul>
+        
+        <h3>Analytics and Reporting</h3>
+        <p>Comprehensive insights into calling campaigns:</p>
+        <ul>
+          <li><strong>Call Analytics:</strong> Detailed metrics on call performance and outcomes</li>
+          <li><strong>Conversation Analysis:</strong> AI-powered insights from call transcripts</li>
+          <li><strong>Performance Tracking:</strong> Monitor and optimize campaign effectiveness</li>
+          <li><strong>ROI Measurement:</strong> Track and measure return on investment</li>
+        </ul>
+        
+        <h2>Industry Applications</h2>
+        
+        <h3>Healthcare</h3>
+        <ul>
+          <li><strong>Appointment Reminders:</strong> Reduce no-shows with automated reminders</li>
+          <li><strong>Follow-up Care:</strong> Post-treatment check-ins and care instructions</li>
+          <li><strong>Medication Reminders:</strong> Ensure medication adherence</li>
+          <li><strong>Health Surveys:</strong> Gather patient feedback and health updates</li>
+        </ul>
+        
+        <h3>Real Estate</h3>
+        <ul>
+          <li><strong>Lead Qualification:</strong> Screen and qualify potential buyers/renters</li>
+          <li><strong>Property Updates:</strong> Automated updates on property listings</li>
+          <li><strong>Viewing Scheduling:</strong> Arrange and confirm property viewings</li>
+          <li><strong>Market Updates:</strong> Keep clients informed about market changes</li>
+        </ul>
+        
+        <h3>Financial Services</h3>
+        <ul>
+          <li><strong>Payment Reminders:</strong> Courteous payment and due date reminders</li>
+          <li><strong>Account Updates:</strong> Important account information and alerts</li>
+          <li><strong>Service Notifications:</strong> Updates on financial products and services</li>
+          <li><strong>Fraud Alerts:</strong> Immediate notification of suspicious activities</li>
+        </ul>
+        
+        <h2>Key Features</h2>
+        
+        <h3>Advanced AI Capabilities</h3>
+        <ul>
+          <li><strong>Natural Conversations:</strong> Human-like dialogue flow and understanding</li>
+          <li><strong>Context Awareness:</strong> Remember and use conversation history</li>
+          <li><strong>Sentiment Analysis:</strong> Understand and respond to customer emotions</li>
+          <li><strong>Dynamic Responses:</strong> Adapt conversation based on customer input</li>
+        </ul>
+        
+        <h3>Integration Capabilities</h3>
+        <ul>
+          <li><strong>CRM Integration:</strong> Seamless connection with existing CRM systems</li>
+          <li><strong>API Support:</strong> Easy integration with business systems</li>
+          <li><strong>Data Synchronization:</strong> Real-time data updates across platforms</li>
+          <li><strong>Custom Workflows:</strong> Tailored integration with business processes</li>
+        </ul>
+        
+        <h2>Technology Stack</h2>
+        
+        <h3>AI and Machine Learning</h3>
+        <ul>
+          <li><strong>Natural Language Processing:</strong> Advanced language understanding</li>
+          <li><strong>Speech Recognition:</strong> Accurate voice-to-text conversion</li>
+          <li><strong>Text-to-Speech:</strong> Natural voice synthesis</li>
+          <li><strong>Machine Learning Models:</strong> Continuous improvement through learning</li>
+        </ul>
+        
+        <h3>Infrastructure</h3>
+        <ul>
+          <li><strong>Cloud Platform:</strong> Scalable cloud-based calling infrastructure</li>
+          <li><strong>Security Systems:</strong> Enterprise-grade data protection</li>
+          <li><strong>Monitoring Tools:</strong> Real-time system monitoring</li>
+          <li><strong>Backup Systems:</strong> Reliable data backup and recovery</li>
+        </ul>
+        
+        <h2>Implementation Process</h2>
+        
+        <h3>1. Analysis and Planning</h3>
+        <p>Understand business requirements and design optimal calling solutions.</p>
+        
+        <h3>2. Voice AI Development</h3>
+        <p>Create and train AI models for natural conversations.</p>
+        
+        <h3>3. Integration</h3>
+        <p>Connect with existing systems and set up workflows.</p>
+        
+        <h3>4. Testing and Optimization</h3>
+        <p>Rigorous testing and fine-tuning of voice AI performance.</p>
+        
+        <h3>5. Deployment and Training</h3>
+        <p>System deployment and staff training on management tools.</p>
+        
+        <h2>Benefits of AI Calling Solutions</h2>
+        <ul>
+          <li><strong>Cost Efficiency:</strong> Reduce operational costs while scaling outreach</li>
+          <li><strong>24/7 Availability:</strong> Round-the-clock customer engagement</li>
+          <li><strong>Consistency:</strong> Maintain consistent quality in customer interactions</li>
+          <li><strong>Scalability:</strong> Easily handle varying call volumes</li>
+          <li><strong>Data Insights:</strong> Valuable insights from call analytics</li>
+          <li><strong>Improved Efficiency:</strong> Automate routine calls and follow-ups</li>
+        </ul>
+        
+        <p>Our AI Calling Agency service combines advanced technology with strategic implementation to help businesses build stronger customer relationships through intelligent, automated voice communication. Whether you're looking to streamline customer service, enhance lead generation, or automate routine calls, our solutions are designed to deliver measurable results while maintaining a personal touch.</p>
+      </div>
+    `,
+  },
 ];

@@ -23,10 +23,6 @@ export const navlinks = [
     path: "/blogs",
     name: "Blogs",
   },
-  {
-    path: "/contact-us",
-    name: "Contact Us",
-  },
 ];
 
 const WebsiteHeader = () => {
@@ -108,6 +104,13 @@ const WebsiteHeader = () => {
                 {name}
               </NavLink>
             ))}
+            <NavLink
+              to="/contact-us"
+              className="text-3xl text-primary_text font-medium transition-colors duration-300 link"
+              onClick={() => setIsOpen(false)}
+            >
+              Contact Us
+            </NavLink>
           </div>
         </Drawer>
         <button

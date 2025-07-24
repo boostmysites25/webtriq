@@ -31,7 +31,7 @@ export { logoImg };
 
 export const companyDetails = {
   phone: "+918219912716",
-  address: "ABC Street, City, Country",
+  address: "Salarpuria Symbiosis, Ground floor Bannerghatta Road Arekere Village, Begur Hobli, Bengaluru, Karnataka 560076",
   email: "connect@webtriq.com",
   linkedin: "",
   instagram: "",
@@ -342,6 +342,27 @@ export const allServices = [
       <br/>
       <br/>
       <p>From financial services and supply chain management to healthcare and digital identity, our blockchain solutions help businesses enhance security, reduce costs, and create new levels of transparency and trust.</p>`,
+  },
+  {
+    id: 8,
+    title: "AI Calling Agency",
+    description:
+      "Transform your customer engagement with intelligent AI-powered calling solutions that automate outreach while maintaining a personal touch.",
+    icon: allServiceIcon4,
+    detailHeading:
+      "AI Calling Agency: Revolutionizing Customer Communication with Intelligent Voice AI",
+    detailContent: `<p>In today's fast-paced business environment, maintaining meaningful customer connections at scale is crucial. Our AI Calling Agency service leverages cutting-edge voice AI technology to deliver personalized, efficient, and scalable communication solutions that help businesses engage with their customers more effectively. Our comprehensive services include:</p>
+      <br/>
+      <ol>
+        <li><b>Automated Outreach Campaigns:</b><br/>Intelligent outbound calling solutions for lead generation, appointment scheduling, customer surveys, and event reminders, all delivered with a natural, human-like touch.</li>
+        <br/>
+        <li><b>Conversational AI Development:</b> <br/> Sophisticated voice AI solutions featuring natural language processing, high-quality voice synthesis, and contextual understanding for engaging, personalized interactions.</li>
+        <br/>
+        <li><b>Customer Service Automation:</b><br/> 24/7 customer support through intelligent voice AI, handling inquiries, processing service requests, and managing escalations with smart human agent routing when needed.</li>
+      </ol>
+      <br/>
+      <br/>
+      <p>Whether you're looking to streamline customer service, enhance lead generation, or automate routine calls, our AI Calling solutions are designed to deliver measurable results while maintaining a personal touch that builds stronger customer relationships.</p>`,
   },
 ];
 
