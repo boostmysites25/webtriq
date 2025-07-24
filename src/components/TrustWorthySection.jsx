@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
 const TrustWorthySection = React.memo(() => {
-  const totalYrs = 3;
-  const projectsDone = 150;
-  const totalExperts = 25;
-  const happlyClients = 80;
+  const totalYrs = 1;
+  const projectsDone = 50;
+  const totalExperts = 10;
+  const happyClients = 20;
 
   const [yrs, setYrs] = useState(0);
   const [completedProjects, setCompletedProjects] = useState(0);
@@ -31,7 +31,7 @@ const TrustWorthySection = React.memo(() => {
 
       // Animate Clients
       const clientsInterval = setInterval(() => {
-        setClients((prev) => Math.min(prev + 1, happlyClients));
+        setClients((prev) => Math.min(prev + 1, happyClients));
       }, 10);
 
       // Animate On Time Completion Percentage
