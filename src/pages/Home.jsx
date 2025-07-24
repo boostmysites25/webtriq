@@ -40,7 +40,7 @@ const Home = () => {
       <WebsiteHeader />
       <section className="h-screen banner relative text-white">
         <div className="absolute top-0 w-full h-full bg-gradient-to-b from-white/20 via-black/30 to-white/20">
-          <div className="wrapper text-center flex flex-col gap-11 justify-center items-center h-full relative z-10 translate-y-[2rem]">
+          <div className="wrapper text-center flex flex-col gap-11 justify-center items-center h-full relative z-10 sm:translate-y-[2rem]">
             <p
               data-aos="fade-up"
               className="text-[1.15rem] sm:text-[1.80rem] font-semibold leading-tight text-white"
