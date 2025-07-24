@@ -46,25 +46,27 @@ const LandingPage = ({ page }) => {
         id="banner"
         className="h-screen banner relative text-primary_text"
       >
-        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background/50 via-background/50 to-background/50">
-          <div className="wrapper text-center flex flex-col gap-11 justify-center items-center h-full relative z-10 sm:translate-y-[2rem]">
-            <p
-              data-aos="fade-up"
-              className="text-[1.15rem] sm:text-[1.80rem] font-semibold leading-tight text-primary_text"
-            >
-              Your Web,{" "}
-              <span className="text-primary_text font-semibold block sm:inline">
-                Our Trick
-              </span>
-            </p>
-            <h1
-              data-aos="fade-up"
-              className="heading-1 whitespace-pre-line capitalize"
-            >
-              {isWebLanding
-                ? "Elevate your business with cutting-edge Website Development"
-                : "Innovation-Driven App Development Services"}
-            </h1>
+        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background/50 via-background/80 to-background/50">
+          <div className="wrapper text-center h-full relative z-10">
+            <div className="sm:translate-y-[2rem] flex flex-col gap-8 justify-center items-center h-full">
+              <p
+                data-aos="fade-up"
+                className="text-[1.15rem] sm:text-[1.80rem] font-semibold leading-tight text-primary_text"
+              >
+                Your Web,{" "}
+                <span className="text-primary_text font-semibold block sm:inline">
+                  Our Trick
+                </span>
+              </p>
+              <h1
+                data-aos="fade-up"
+                className="heading-1 whitespace-pre-line capitalize"
+              >
+                {isWebLanding
+                  ? "Elevate your business with cutting-edge Website Development"
+                  : "Innovation-Driven App Development Services"}
+              </h1>
+            </div>
           </div>
         </div>
         <ReactPlayer
