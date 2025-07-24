@@ -40,17 +40,17 @@ const Home = () => {
       <WebsiteHeader />
       <section className="h-screen banner relative text-white">
         <div className="absolute top-0 w-full h-full bg-gradient-to-b from-white/20 via-black/30 to-white/20">
-          <div
-            data-aos="fade-up"
-            className="wrapper text-center flex flex-col gap-6 justify-center items-center h-full relative z-10"
-          >
-            <p className="text-[1.15rem] sm:text-[1.80rem] font-semibold leading-tight text-white">
+          <div className="wrapper text-center flex flex-col gap-6 justify-center items-center h-full relative z-10 translate-y-[2rem]">
+            <p
+              data-aos="fade-up"
+              className="text-[1.15rem] sm:text-[1.80rem] font-semibold leading-tight text-white"
+            >
               Your Web,{" "}
               <span className="text-white font-semibold block sm:inline">
                 Our Tricks
               </span>
             </p>
-            <h1 className="heading capitalize">
+            <h1 data-aos="fade-up" className="heading capitalize">
               Elevating Digital Experiences <br /> Through Innovation
             </h1>
           </div>

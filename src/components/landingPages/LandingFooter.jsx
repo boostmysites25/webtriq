@@ -1,6 +1,6 @@
 import React from "react";
 import { companyDetails, logoImg } from "../../constant";
-import { Instagram, Linkedin, Mail, Phone, Twitter } from "lucide-react";
+import { Instagram, Linkedin, Mail, MapPin, Phone, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import ImageWithSkeleton from "../ImageWithSkeleton";
@@ -76,6 +76,14 @@ const LandingFooter = () => {
                 />{" "}
                 <span className="">{companyDetails.phone}</span>
               </Link>
+            </li>
+            <li className="max-w-[17rem] flex gap-3 text-primary_text/70">
+              <MapPin
+                strokeWidth={1.5}
+                size={20}
+                className="text-primary inline min-w-5"
+              />{" "}
+              <span className="">{companyDetails.address}</span>
             </li>
           </ul>
         </div>
