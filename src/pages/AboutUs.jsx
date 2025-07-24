@@ -45,6 +45,7 @@ const AboutUs = () => {
               className="object-cover h-full rounded-lg"
               skeletonClassName="rounded-lg h-full"
               alt=""
+              containerStyles="h-full"
             />
           </div>
           <div
@@ -68,15 +69,25 @@ const AboutUs = () => {
                 Architecting Digital Excellence Through Strategic Innovation
               </h2>
               <p className="desc">
-                At{" "}
-                <span className="font-semibold text-primary">
-                  Webtriq
-                </span>
-                , we transcend conventional development paradigms to create transformative digital solutions that propel organizations toward their strategic objectives. With a sophisticated blend of technical expertise and visionary thinking, we craft bespoke digital ecosystems precisely calibrated to address your most complex challenges. <br />
+                At <span className="font-semibold text-primary">Webtriq</span>
+                , we transcend conventional development paradigms to create
+                transformative digital solutions that propel organizations
+                toward their strategic objectives. With a sophisticated blend of
+                technical expertise and visionary thinking, we craft bespoke
+                digital ecosystems precisely calibrated to address your most
+                complex challenges. <br />
                 <br />
-                Our mission is to catalyze industry evolution through strategic technology implementation, empowering enterprises to excel in an increasingly digital-centric landscape. We leverage cutting-edge frameworks and methodologies to deliver solutions that not only meet current requirements but anticipate future needs. <br />
-                <br /> 
-                We champion the transformative potential of purposeful innovation. Our multidisciplinary team collaborates to create compelling digital experiences that authentically articulate your brand narrative and forge meaningful connections with your target audience.
+                Our mission is to catalyze industry evolution through strategic
+                technology implementation, empowering enterprises to excel in an
+                increasingly digital-centric landscape. We leverage cutting-edge
+                frameworks and methodologies to deliver solutions that not only
+                meet current requirements but anticipate future needs. <br />
+                <br />
+                We champion the transformative potential of purposeful
+                innovation. Our multidisciplinary team collaborates to create
+                compelling digital experiences that authentically articulate
+                your brand narrative and forge meaningful connections with your
+                target audience.
               </p>
             </div>
           </div>
