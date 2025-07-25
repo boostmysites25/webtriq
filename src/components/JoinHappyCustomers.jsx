@@ -13,7 +13,7 @@ import img9 from "../assets/images/client-logos/9.png";
 import img10 from "../assets/images/client-logos/10.png";
 import ImageWithSkeleton from "./ImageWithSkeleton";
 
-const animation = { duration: 10000, easing: (t) => t };
+const animation = { duration: 30000, easing: (t) => t };
 
 const JoinHappyCustomers = () => {
   const [sliderRef] = useKeenSlider({
@@ -53,7 +53,46 @@ const JoinHappyCustomers = () => {
     animationEnded(s) {
       s.moveToIdx(s.track.details.abs + 5, true, animation);
     },
-  });
+  }, [
+    (slider) => {
+      let timeout;
+      let mouseOver = false;
+      
+      function clearNextTimeout() {
+        clearTimeout(timeout);
+      }
+      
+      function nextTimeout() {
+        clearTimeout(timeout);
+        if (mouseOver) return;
+        timeout = setTimeout(() => {
+          slider.moveToIdx(slider.track.details.abs + 5, true, animation);
+        }, 100); // Small delay before continuing animation
+      }
+      
+      slider.on("created", () => {
+        slider.container.addEventListener("mouseover", () => {
+          mouseOver = true;
+          clearNextTimeout();
+          // Stop current animation
+          slider.animator.stop();
+        });
+        
+        slider.container.addEventListener("mouseout", () => {
+          mouseOver = false;
+          nextTimeout();
+        });
+        
+        nextTimeout();
+      });
+      
+      slider.on("animationEnded", () => {
+        if (!mouseOver) {
+          nextTimeout();
+        }
+      });
+    },
+  ]);
   return (
     <div
       className="py-[5rem] bg-center bg-cover relative text-primary_text"

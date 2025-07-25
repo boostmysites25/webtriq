@@ -63,6 +63,7 @@ const AboutUs = () => {
                   className="object-cover h-full rounded-lg w-full"
                   skeletonClassName="rounded-lg h-full"
                   alt=""
+                  containerStyles="h-full"
                 />
               </div>
               <h2 className="heading-2 max-w-[60rem] mx-auto">

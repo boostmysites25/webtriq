@@ -31,7 +31,7 @@ const LandingHeader = ({ link }) => {
   };
 
   return (
-    <div className="py-4 fixed top-0 w-full bg-background backdrop-blur-md z-50 text-primary_text">
+    <div className="py-4 fixed border-b-2 top-0 w-full bg-background backdrop-blur-md z-50 text-primary_text">
       <div className="wrapper flex justify-between items-center gap-10">
         <div className="flex justify-between items-center gap-20 w-full pl-[1rem] lg:pl-0">
           <Helmet>

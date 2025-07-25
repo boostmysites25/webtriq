@@ -22,22 +22,22 @@ const TrustWorthySection = React.memo(() => {
       // Animate Years of Experience
       const yrsInterval = setInterval(() => {
         setYrs((prev) => Math.min(prev + 1, totalYrs));
-      }, 100);
+      }, 300);
 
       // Animate Experts
       const expertsInterval = setInterval(() => {
         setExperts((prev) => Math.min(prev + 1, totalExperts));
-      }, 100);
+      }, 40);
 
       // Animate Clients
       const clientsInterval = setInterval(() => {
         setClients((prev) => Math.min(prev + 1, happyClients));
-      }, 10);
+      }, 5);
 
       // Animate On Time Completion Percentage
       const completionInterval = setInterval(() => {
         setCompletedProjects((prev) => Math.min(prev + 1, projectsDone));
-      }, 10);
+      }, 5);
 
       // Clear intervals when animation reaches target values
       return () => {

@@ -16,7 +16,7 @@ import ImageWithSkeleton from "../ImageWithSkeleton";
 
 const WebsiteFooter = () => {
   return (
-    <div className="py-[3rem] bg-background">
+    <div className="py-[3rem] border-t-2 bg-background">
       <div className="wrapper flex lg:flex-row flex-col gap-7 sm:gap-14 justify-between">
         <div className="">
           <Helmet>

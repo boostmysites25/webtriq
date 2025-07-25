@@ -1,12 +1,11 @@
 import React from "react";
 import { useKeenSlider } from "keen-slider/react";
 import { testimonials } from "../constant";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 import SubHeading from "./SubHeading";
 import ImageWithSkeleton from "./ImageWithSkeleton";
 
 const Testimonials = () => {
-  const animation = { duration: 30000, easing: (t) => t };
+  const animation = { duration: 70000, easing: (t) => t };
   const [sliderRef] = useKeenSlider({
     loop: true,
     renderMode: "performance",
@@ -44,67 +43,46 @@ const Testimonials = () => {
     animationEnded(s) {
       s.moveToIdx(s.track.details.abs + 5, true, animation);
     },
-  });
-  // const [sliderRef, instanceRef] = useKeenSlider(
-  //   {
-  //     loop: true,
-  //     slides: {
-  //       perView: 3,
-  //       spacing: 20,
-  //     },
-  //     breakpoints: {
-  //       "(max-width: 1024px)": {
-  //         slides: {
-  //           perView: 1,
-  //           spacing: 20,
-  //         },
-  //       },
-  //     },
-  //   },
-  //   [
-  //     (slider) => {
-  //       let timeout;
-  //       let mouseOver = false;
-  //       function clearNextTimeout() {
-  //         clearTimeout(timeout);
-  //       }
-  //       function nextTimeout() {
-  //         clearTimeout(timeout);
-  //         if (mouseOver) return;
-  //         timeout = setTimeout(() => {
-  //           slider.next();
-  //         }, 2000);
-  //       }
-  //       slider.on("created", () => {
-  //         slider.container.addEventListener("mouseover", () => {
-  //           mouseOver = true;
-  //           clearNextTimeout();
-  //         });
-  //         slider.container.addEventListener("mouseout", () => {
-  //           mouseOver = false;
-  //           nextTimeout();
-  //         });
-  //         nextTimeout();
-  //       });
-  //       slider.on("dragStarted", clearNextTimeout);
-  //       slider.on("animationEnded", nextTimeout);
-  //       slider.on("updated", nextTimeout);
-  //     },
-  //   ]
-  // );
-
-  // Button click handler
-  // const handleNextClick = () => {
-  //   if (instanceRef.current) {
-  //     instanceRef.current.next(); // Move to the next slide
-  //   }
-  // };
-
-  // const handlePrevClick = () => {
-  //   if (instanceRef.current) {
-  //     instanceRef.current.prev(); // Move to the prev slide
-  //   }
-  // };
+  }, [
+    (slider) => {
+      let timeout;
+      let mouseOver = false;
+      
+      function clearNextTimeout() {
+        clearTimeout(timeout);
+      }
+      
+      function nextTimeout() {
+        clearTimeout(timeout);
+        if (mouseOver) return;
+        timeout = setTimeout(() => {
+          slider.moveToIdx(slider.track.details.abs + 5, true, animation);
+        }, 100); // Small delay before continuing animation
+      }
+      
+      slider.on("created", () => {
+        slider.container.addEventListener("mouseover", () => {
+          mouseOver = true;
+          clearNextTimeout();
+          // Stop current animation
+          slider.animator.stop();
+        });
+        
+        slider.container.addEventListener("mouseout", () => {
+          mouseOver = false;
+          nextTimeout();
+        });
+        
+        nextTimeout();
+      });
+      
+      slider.on("animationEnded", () => {
+        if (!mouseOver) {
+          nextTimeout();
+        }
+      });
+    },
+  ]);
   return (
     <div className="py-[5rem]">
       <div className="flex flex-col items-start sm:items-center gap-5">
