@@ -76,8 +76,12 @@ const Home = () => {
                   style: {
                     objectFit: "cover",
                   },
-                },
-              },
+                  playsInline: true,
+                  webkitPlaysinline: "true",
+                  preload: "auto",
+                  autoPlay: true
+                }
+              }
             }}
           />
         </div>

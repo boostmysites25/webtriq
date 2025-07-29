@@ -84,8 +84,12 @@ const LandingPage = ({ page }) => {
                 style: {
                   objectFit: "cover",
                 },
-              },
-            },
+                playsInline: true,
+                webkitPlaysinline: "true",
+                preload: "auto",
+                autoPlay: true
+              }
+            }
           }}
         />
       </section>
