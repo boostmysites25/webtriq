@@ -50,7 +50,7 @@ const WhyChooseUs = () => {
               The essence that drives our excellence.
             </h1>
             <h2 className="sub-heading text-center max-w-[60rem] mt-3 mx-auto">
-              At Webtriq, we're guided by our commitment to:
+              At Webtriq Technologies, we're guided by our commitment to:
             </h2>
             <div
               data-aos="fade-up"

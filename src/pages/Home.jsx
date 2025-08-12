@@ -185,7 +185,7 @@ const Home = () => {
                   Turning Bold Ideas Into Digital Reality
                 </h2>
                 <p className="desc">
-                  At <span className="font-medium text-primary">Webtriq</span>,
+                  At <span className="font-medium text-primary">Webtriq Technologies</span>,
                   we're passionate about propelling your enterprise forward
                   through cutting-edge digital solutions. Combining technical
                   expertise with creative vision, we craft bespoke digital

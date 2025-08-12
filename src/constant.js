@@ -32,9 +32,9 @@ export { logoImg };
 export const companyDetails = {
   phone: "+918219912716",
   address: "Salarpuria Symbiosis, Ground floor Bannerghatta Road Arekere Village, Begur Hobli, Bengaluru, Karnataka 560076",
-  email: "connect@webtriq.com",
+  email: "connect@Webtriq Technologies.com",
   linkedin: "",
-  instagram: "https://www.instagram.com/webtriq_technologies?igsh=MTdncHZieW9sOGU2ZQ==",
+  instagram: "https://www.instagram.com/Webtriq Technologies_technologies?igsh=MTdncHZieW9sOGU2ZQ==",
   twitter: "",
 };
 
@@ -147,49 +147,49 @@ export const testimonials = [
     name: "Samiksha Sharma",
     position: "Operations Director at EcoFlow Systems",
     img: require("./assets/images/testimonial3.webp"),
-    desc: "Webtriq's web development expertise transformed our digital presence completely. Their team created an architecturally sophisticated, performance-optimized platform that perfectly embodies our brand identity while delivering exceptional user engagement metrics.",
+    desc: "Webtriq Technologies's web development expertise transformed our digital presence completely. Their team created an architecturally sophisticated, performance-optimized platform that perfectly embodies our brand identity while delivering exceptional user engagement metrics.",
   },
   {
     id: 2,
     name: "Anubhav J.",
     position: "Chief Innovation Officer at PlayForge Studios",
     img: require("./assets/images/testimonial1.webp"),
-    desc: "The custom software solution Webtriq engineered for our unique operational challenges has fundamentally transformed our workflow efficiency. Their strategic approach to understanding our business needs resulted in a tailored system that has increased productivity by 47%.",
+    desc: "The custom software solution Webtriq Technologies engineered for our unique operational challenges has fundamentally transformed our workflow efficiency. Their strategic approach to understanding our business needs resulted in a tailored system that has increased productivity by 47%.",
   },
   {
     id: 3,
     name: "Emily T.",
     position: "Technology Director at Health Innovations Group",
     img: require("./assets/images/testimonial2.webp"),
-    desc: "Webtriq's AI development capabilities have revolutionized our data analytics infrastructure. Their machine learning models deliver predictive insights with remarkable accuracy, enabling us to make strategic decisions with unprecedented confidence. A truly transformative partnership.",
+    desc: "Webtriq Technologies's AI development capabilities have revolutionized our data analytics infrastructure. Their machine learning models deliver predictive insights with remarkable accuracy, enabling us to make strategic decisions with unprecedented confidence. A truly transformative partnership.",
   },
   {
     id: 4,
     name: "Aarav Kapoor",
     position: "Product Strategy Lead at Nexus Tech",
     img: require("./assets/images/testimonial4.webp"),
-    desc: "The IoT solution implemented by Webtriq has created a seamlessly connected ecosystem across our manufacturing facilities. Their sophisticated architecture design and analytics dashboard provide real-time operational visibility that has optimized our production efficiency by 32%.",
+    desc: "The IoT solution implemented by Webtriq Technologies has created a seamlessly connected ecosystem across our manufacturing facilities. Their sophisticated architecture design and analytics dashboard provide real-time operational visibility that has optimized our production efficiency by 32%.",
   },
   {
     id: 5,
     name: "Jessica M.",
     position: "Digital Transformation Director at Blockchain Ventures",
     img: require("./assets/images/testimonial5.webp"),
-    desc: "Webtriq's blockchain development expertise delivered a secure, transparent distributed system that has transformed our supply chain verification process. Their implementation of smart contracts has automated complex transactions while establishing unprecedented levels of trust with our partners.",
+    desc: "Webtriq Technologies's blockchain development expertise delivered a secure, transparent distributed system that has transformed our supply chain verification process. Their implementation of smart contracts has automated complex transactions while establishing unprecedented levels of trust with our partners.",
   },
   {
     id: 6,
     name: "Michael Chen",
     position: "Head of Mobile Strategy at Omnichannel Retail Group",
     img: require("./assets/images/testimonial1.webp"),
-    desc: "The mobile application Webtriq developed for our retail ecosystem has redefined customer engagement for our brand. Their intuitive interface design and seamless integration with our existing systems resulted in a 63% increase in mobile conversions and exceptional user satisfaction metrics.",
+    desc: "The mobile application Webtriq Technologies developed for our retail ecosystem has redefined customer engagement for our brand. Their intuitive interface design and seamless integration with our existing systems resulted in a 63% increase in mobile conversions and exceptional user satisfaction metrics.",
   },
   {
     id: 7,
     name: "Sophia Rodriguez",
     position: "Creative Director at Immersive Entertainment",
     img: require("./assets/images/testimonial2.webp"),
-    desc: "Webtriq's game development team delivered an immersive, visually stunning experience that exceeded our creative vision. Their technical expertise in optimization ensured flawless performance across platforms, resulting in exceptional player retention and industry recognition.",
+    desc: "Webtriq Technologies's game development team delivered an immersive, visually stunning experience that exceeded our creative vision. Their technical expertise in optimization ensured flawless performance across platforms, resulting in exceptional player retention and industry recognition.",
   },
 ];
 
@@ -204,7 +204,7 @@ export const allServices = [
     icon: allServiceIcon1,
     detailHeading:
       "Web Development: Crafting Digital Experiences That Inspire Action",
-    detailContent: `<p>At Webtriq, we transcend conventional website building to create immersive digital environments engineered for performance. Whether you're an emerging startup establishing your digital footprint or an established enterprise requiring a sophisticated, scalable platform, our web development expertise is precisely calibrated to your specific requirements. Our multidisciplinary team collaborates to deliver:</p>
+    detailContent: `<p>At Webtriq Technologies, we transcend conventional website building to create immersive digital environments engineered for performance. Whether you're an emerging startup establishing your digital footprint or an established enterprise requiring a sophisticated, scalable platform, our web development expertise is precisely calibrated to your specific requirements. Our multidisciplinary team collaborates to deliver:</p>
     <br/>
     <ol>
       <li><b>Bespoke Digital Experiences:</b><br/> We reject templated approaches in favor of custom-crafted solutions that authentically embody your brand identity and strategic objectives.</li>
@@ -225,7 +225,7 @@ export const allServices = [
     icon: allServiceIcon6,
     detailHeading:
       "Game Development: Bringing Your Ideas to Life with Interactive Experiences",
-    detailContent: `<p>Whether you're an indie developer with a fresh idea or a large studio looking to expand your portfolio, we offer comprehensive game development services to bring your vision to life. At Webtriq, we specialize in creating immersive, engaging games for mobile, console, and PC platforms. Our game development services include:</p>
+    detailContent: `<p>Whether you're an indie developer with a fresh idea or a large studio looking to expand your portfolio, we offer comprehensive game development services to bring your vision to life. At Webtriq Technologies, we specialize in creating immersive, engaging games for mobile, console, and PC platforms. Our game development services include:</p>
       <br/>
       <ol>
         <li><b>Concept and Story Development:</b><br/>We work with you to develop compelling narratives, unique characters, and engaging gameplay mechanics that keep players coming back.</li>
@@ -247,7 +247,7 @@ export const allServices = [
     icon: allServiceIcon2,
     detailHeading:
       "App Development: Transformative Mobile Solutions for the Digital Age",
-    detailContent: `<p>In today's mobile-centric landscape, a strategically designed application can fundamentally differentiate your business offering. At Webtriq, we excel in crafting bespoke mobile experiences that are intuitive, feature-rich, and precisely aligned with your strategic objectives. Our comprehensive app development process encompasses every phase from conceptualization to deployment:</p>
+    detailContent: `<p>In today's mobile-centric landscape, a strategically designed application can fundamentally differentiate your business offering. At Webtriq Technologies, we excel in crafting bespoke mobile experiences that are intuitive, feature-rich, and precisely aligned with your strategic objectives. Our comprehensive app development process encompasses every phase from conceptualization to deployment:</p>
       <br/>
       <ol>
         <li><b>iOS and Android Apps:</b><br/>Whether you’re targeting iPhone users or Android fans, we develop native apps for both platforms to ensure optimal performance and user experience.</li>
@@ -268,7 +268,7 @@ export const allServices = [
     icon: allServiceIcon3,
     detailHeading:
       "Custom Software Development: Tailored Solutions for Unique Business Needs",
-    detailContent: `<p>Off-the-shelf software often falls short when it comes to addressing the unique challenges and requirements of your business. At Webtriq, we specialize in developing custom software solutions that are specifically designed to meet your exact needs and help you gain a competitive edge. Our custom software development services include:</p>
+    detailContent: `<p>Off-the-shelf software often falls short when it comes to addressing the unique challenges and requirements of your business. At Webtriq Technologies, we specialize in developing custom software solutions that are specifically designed to meet your exact needs and help you gain a competitive edge. Our custom software development services include:</p>
       <br/>
       <ol>
         <li><b>Comprehensive Needs Analysis:</b><br/>We begin by thoroughly understanding your business processes, challenges, and objectives to ensure our solution addresses your specific requirements.</li>
@@ -289,7 +289,7 @@ export const allServices = [
     icon: allServiceIcon5,
     detailHeading:
       "AI Development: Harnessing Intelligent Technologies for Business Transformation",
-    detailContent: `<p>Artificial Intelligence is revolutionizing how businesses operate, make decisions, and engage with customers. At Webtriq, we develop sophisticated AI solutions that help organizations automate processes, gain valuable insights, and create intelligent systems. Our AI development expertise spans multiple domains:</p>
+    detailContent: `<p>Artificial Intelligence is revolutionizing how businesses operate, make decisions, and engage with customers. At Webtriq Technologies, we develop sophisticated AI solutions that help organizations automate processes, gain valuable insights, and create intelligent systems. Our AI development expertise spans multiple domains:</p>
       <br/>
       <ol>
         <li><b>Machine Learning Solutions:</b><br/> We develop predictive models and algorithms that learn from your data to identify patterns, make accurate forecasts, and enable data-driven decision making.</li>
@@ -309,7 +309,7 @@ export const allServices = [
       "Connect devices, gather valuable data, and create smart environments with our comprehensive Internet of Things development services.",
     icon: allServiceIcon4,
     detailHeading: "IoT Solutions: Connecting the Physical and Digital Worlds",
-    detailContent: `<p>The Internet of Things (IoT) is transforming how we interact with the physical world, creating unprecedented opportunities for businesses to gather data, automate processes, and enhance user experiences. At Webtriq, we develop comprehensive IoT solutions that connect devices, analyze data, and enable smart decision-making. Our IoT services include:</p>
+    detailContent: `<p>The Internet of Things (IoT) is transforming how we interact with the physical world, creating unprecedented opportunities for businesses to gather data, automate processes, and enhance user experiences. At Webtriq Technologies, we develop comprehensive IoT solutions that connect devices, analyze data, and enable smart decision-making. Our IoT services include:</p>
       <br/>
       <ol>
         <li><b>IoT Architecture Design:</b><br/>We design robust, scalable IoT architectures that connect devices, ensure secure data transmission, and enable efficient data processing and storage.</li>
@@ -330,7 +330,7 @@ export const allServices = [
     icon: allServiceIcon3,
     detailHeading:
       "Blockchain Development: Secure and Transparent Decentralized Solutions",
-    detailContent: `<p>Blockchain technology is revolutionizing how businesses handle transactions, manage supply chains, and ensure data integrity. At Webtriq, we develop blockchain solutions that leverage the power of distributed ledger technology to create secure, transparent, and efficient systems. Our blockchain development services include:</p>
+    detailContent: `<p>Blockchain technology is revolutionizing how businesses handle transactions, manage supply chains, and ensure data integrity. At Webtriq Technologies, we develop blockchain solutions that leverage the power of distributed ledger technology to create secure, transparent, and efficient systems. Our blockchain development services include:</p>
       <br/>
       <ol>
         <li><b>Smart Contract Development:</b><br/>We create self-executing contracts with the terms directly written into code, automating transactions and ensuring they're executed exactly as programmed without intermediaries.</li>

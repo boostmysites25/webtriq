@@ -20,7 +20,7 @@ export const services = [
     content: `
       <div class="service-content">
         <h2>Comprehensive Web Development Solutions</h2>
-        <p>At Webtriq, we transcend conventional website building to create immersive digital environments engineered for performance. Whether you're an emerging startup establishing your digital footprint or an established enterprise requiring a sophisticated, scalable platform, our web development expertise is precisely calibrated to your specific requirements.</p>
+        <p>At Webtriq Technologies, we transcend conventional website building to create immersive digital environments engineered for performance. Whether you're an emerging startup establishing your digital footprint or an established enterprise requiring a sophisticated, scalable platform, our web development expertise is precisely calibrated to your specific requirements.</p>
         
         <h2>Our Web Development Services</h2>
         
@@ -84,7 +84,7 @@ export const services = [
           <li><strong>DevOps:</strong> Docker, Kubernetes, CI/CD pipelines</li>
         </ul>
         
-        <h2>Why Choose Webtriq for Web Development?</h2>
+        <h2>Why Choose Webtriq Technologies for Web Development?</h2>
         <ul>
           <li><strong>Proven Expertise:</strong> Years of experience delivering successful web projects</li>
           <li><strong>Agile Methodology:</strong> Flexible development process with regular updates</li>
@@ -110,7 +110,7 @@ export const services = [
     content: `
       <div class="service-content">
         <h2>Mobile App Development Excellence</h2>
-        <p>In today's mobile-centric landscape, a strategically designed application can fundamentally differentiate your business offering. At Webtriq, we excel in crafting bespoke mobile experiences that are intuitive, feature-rich, and precisely aligned with your strategic objectives.</p>
+        <p>In today's mobile-centric landscape, a strategically designed application can fundamentally differentiate your business offering. At Webtriq Technologies, we excel in crafting bespoke mobile experiences that are intuitive, feature-rich, and precisely aligned with your strategic objectives.</p>
         
         <h2>Our Mobile App Development Services</h2>
         
@@ -192,7 +192,7 @@ export const services = [
           <li><strong>Travel:</strong> Booking, navigation, and travel management apps</li>
         </ul>
         
-        <h2>Why Choose Webtriq for Mobile App Development?</h2>
+        <h2>Why Choose Webtriq Technologies for Mobile App Development?</h2>
         <ul>
           <li><strong>Expert Team:</strong> Skilled developers with extensive mobile development experience</li>
           <li><strong>Platform Expertise:</strong> Deep knowledge of iOS and Android platforms</li>
@@ -218,7 +218,7 @@ export const services = [
     content: `
       <div class="service-content">
         <h2>Bespoke Software Solutions</h2>
-        <p>Off-the-shelf software often falls short when it comes to addressing the unique challenges and requirements of your business. At Webtriq, we specialize in developing custom software solutions that are specifically designed to meet your exact needs and help you gain a competitive edge.</p>
+        <p>Off-the-shelf software often falls short when it comes to addressing the unique challenges and requirements of your business. At Webtriq Technologies, we specialize in developing custom software solutions that are specifically designed to meet your exact needs and help you gain a competitive edge.</p>
         
         <h2>Our Custom Software Development Services</h2>
         
@@ -340,7 +340,7 @@ export const services = [
     content: `
       <div class="service-content">
         <h2>Artificial Intelligence Solutions</h2>
-        <p>Artificial Intelligence is revolutionizing how businesses operate, make decisions, and engage with customers. At Webtriq, we develop sophisticated AI solutions that help organizations automate processes, gain valuable insights, and create intelligent systems that drive growth and efficiency.</p>
+        <p>Artificial Intelligence is revolutionizing how businesses operate, make decisions, and engage with customers. At Webtriq Technologies, we develop sophisticated AI solutions that help organizations automate processes, gain valuable insights, and create intelligent systems that drive growth and efficiency.</p>
         
         <h2>Our AI Development Services</h2>
         
@@ -486,7 +486,7 @@ export const services = [
     content: `
       <div class="service-content">
         <h2>Internet of Things Development</h2>
-        <p>The Internet of Things (IoT) is transforming how we interact with the physical world, creating unprecedented opportunities for businesses to gather data, automate processes, and enhance user experiences. At Webtriq, we develop comprehensive IoT solutions that connect devices, analyze data, and enable smart decision-making.</p>
+        <p>The Internet of Things (IoT) is transforming how we interact with the physical world, creating unprecedented opportunities for businesses to gather data, automate processes, and enhance user experiences. At Webtriq Technologies, we develop comprehensive IoT solutions that connect devices, analyze data, and enable smart decision-making.</p>
         
         <h2>Our IoT Development Services</h2>
         
@@ -656,7 +656,7 @@ export const services = [
     content: `
       <div class="service-content">
         <h2>Blockchain Technology Solutions</h2>
-        <p>Blockchain technology is revolutionizing how businesses handle transactions, manage supply chains, and ensure data integrity. At Webtriq, we develop blockchain solutions that leverage the power of distributed ledger technology to create secure, transparent, and efficient systems.</p>
+        <p>Blockchain technology is revolutionizing how businesses handle transactions, manage supply chains, and ensure data integrity. At Webtriq Technologies, we develop blockchain solutions that leverage the power of distributed ledger technology to create secure, transparent, and efficient systems.</p>
         
         <h2>Our Blockchain Development Services</h2>
         
@@ -847,7 +847,7 @@ export const services = [
     content: `
       <div class="service-content">
         <h2>Comprehensive Game Development Services</h2>
-        <p>Whether you're an indie developer with a fresh idea or a large studio looking to expand your portfolio, we offer comprehensive game development services to bring your vision to life. At Webtriq, we specialize in creating immersive, engaging games for mobile, console, and PC platforms.</p>
+        <p>Whether you're an indie developer with a fresh idea or a large studio looking to expand your portfolio, we offer comprehensive game development services to bring your vision to life. At Webtriq Technologies, we specialize in creating immersive, engaging games for mobile, console, and PC platforms.</p>
         
         <h2>Our Game Development Services</h2>
         

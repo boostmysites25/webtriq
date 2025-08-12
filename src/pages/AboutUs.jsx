@@ -70,7 +70,7 @@ const AboutUs = () => {
                 Architecting Digital Excellence Through Strategic Innovation
               </h2>
               <p className="desc">
-                At <span className="font-semibold text-primary">Webtriq</span>
+                At <span className="font-semibold text-primary">Webtriq Technologies</span>
                 , we transcend conventional development paradigms to create
                 transformative digital solutions that propel organizations
                 toward their strategic objectives. With a sophisticated blend of
@@ -168,7 +168,7 @@ const AboutUs = () => {
               <SubHeading heading="Our Leadership Team" />
               <h2 className="heading-2">The Minds Behind Our Innovation</h2>
               <p className="desc">
-                At <b>Webtriq</b>, our exceptional team forms the foundation of every solution we deliver. 
+                At <b>Webtriq Technologies</b>, our exceptional team forms the foundation of every solution we deliver. 
                 Uniting advanced technical expertise, strategic vision, and unwavering commitment to client success, 
                 our professionals excel at transforming multifaceted challenges into elegant, intuitive experiences. 
                 From software architects and development specialists to UX strategists and implementation consultants, 

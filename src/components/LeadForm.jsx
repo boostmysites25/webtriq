@@ -38,7 +38,7 @@ const LeadForm = () => {
       to: companyDetails.email,
       subject: values.subject,
       body: emailBody,
-      name:"Webtriq"
+      name:"Webtriq Technologies"
     };
 
     await fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
@@ -73,7 +73,7 @@ const LeadForm = () => {
         Let's connect!
       </h2>
       <p data-aos="fade-up" className="desc text-center max-w-[55rem] mx-auto">
-        At Webtriq, we believe in the power of collaboration and shared
+        At Webtriq Technologies, we believe in the power of collaboration and shared
         passion. We're not just a team of developers, we're your partners in
         igniting your brand's unique potential. So, whether you're brimming with
         ideas or just starting to spark, reach out and let's chat!
