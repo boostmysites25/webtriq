@@ -32,9 +32,9 @@ export { logoImg };
 export const companyDetails = {
   phone: "+918219912716",
   address: "Salarpuria Symbiosis, Ground floor Bannerghatta Road Arekere Village, Begur Hobli, Bengaluru, Karnataka 560076",
-  email: "connect@Webtriq Technologies.com",
+  email: "connect@webtriq.com",
   linkedin: "",
-  instagram: "https://www.instagram.com/Webtriq Technologies_technologies?igsh=MTdncHZieW9sOGU2ZQ==",
+  instagram: "https://www.instagram.com/webtriq_technologies?igsh=MTdncHZieW9sOGU2ZQ==",
   twitter: "",
 };
 
