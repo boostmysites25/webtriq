@@ -9,6 +9,7 @@ import { ReactComponent as Icon3 } from "../assets/svgs/services/Machine Learnin
 import WorkProcess from "../components/WorkProcess";
 import ReactPlayer from "react-player";
 import ImageWithSkeleton from "../components/ImageWithSkeleton";
+import SEO from "../components/SEO";
 
 import bannerthump from "../assets/vids/banner-thump.webp";
 
@@ -37,6 +38,25 @@ const Home = () => {
   const [bannerLoading, setBannerLoading] = useState(true);
   return (
     <>
+      <SEO 
+        title="Webtriq Technologies - Innovative Technology Solutions | Web Development, App Development, AI Solutions"
+        description="Transform your business with Webtriq Technologies' cutting-edge solutions in Web Development, App Development, AI, IoT, Blockchain, and Game Development. Expert team delivering innovative digital experiences."
+        keywords="web development, app development, AI development, IoT solutions, blockchain development, game development, software development, digital transformation, technology solutions, custom software"
+        canonical="/"
+        ogImage="/logo.png"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "Webtriq Technologies",
+          "url": "https://webtriq.com",
+          "description": "Your trusted partner for Web Development, App Development, AI Solutions, IoT, Blockchain, and Game Development.",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://webtriq.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }}
+      />
       <WebsiteHeader />
       <section className="h-screen banner relative text-white">
         <div className="absolute top-0 w-full h-full bg-gradient-to-b from-white/20 via-black/30 to-white/20">

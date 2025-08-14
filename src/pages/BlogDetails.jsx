@@ -6,6 +6,7 @@ import WebsiteFooter from "../components/website/WebsiteFooter";
 import SubHeading from "../components/SubHeading";
 import { BlogItem } from "./Blogs";
 import ImageWithSkeleton from "../components/ImageWithSkeleton";
+import SEO from "../components/SEO";
 
 const BlogDetails = () => {
   const { id } = useParams();
@@ -19,6 +20,44 @@ const BlogDetails = () => {
 
   return (
     <>
+      <SEO 
+        title={`${blog.title} - Webtriq Technologies Blog`}
+        description={blog.excerpt}
+        keywords={`${blog.category}, technology, ${blog.title.toLowerCase()}, webtriq technologies, digital transformation`}
+        canonical={`/blogs/${blog.id}`}
+        ogType="article"
+        ogImage="/logo.png"
+        publishedTime={blog.date}
+        section={blog.category}
+        tags={[blog.category, 'technology', 'digital transformation']}
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": blog.title,
+          "description": blog.excerpt,
+          "image": "https://webtriq.com/logo.png",
+          "datePublished": blog.date,
+          "dateModified": blog.date,
+          "author": {
+            "@type": "Organization",
+            "name": "Webtriq Technologies",
+            "url": "https://webtriq.com"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Webtriq Technologies",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://webtriq.com/logo.png"
+            }
+          },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://webtriq.com/blogs/${blog.id}`
+          },
+          "articleSection": blog.category
+        }}
+      />
       <WebsiteHeader />
       <div className="bg-primary/5 relative text-primary_text">
         <div className="wrapper py-[5rem] relative z-10">

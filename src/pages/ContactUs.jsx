@@ -2,6 +2,7 @@ import React, { lazy } from "react";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { companyDetails } from "../constant";
 import { Link } from "react-router-dom";
+import SEO from "../components/SEO";
 const WebsiteHeader = lazy(() => import("../components/website/WebsiteHeader"));
 const PageBanner = lazy(() => import("../components/website/PageBanner"));
 const WebsiteFooter = lazy(() => import("../components/website/WebsiteFooter"));
@@ -10,6 +11,40 @@ const LeadForm = lazy(() => import("../components/LeadForm"));
 const ContactUs = () => {
   return (
     <>
+      <SEO 
+        title="Contact Us - Webtriq Technologies | Get in Touch for Technology Solutions"
+        description="Contact Webtriq Technologies for expert technology solutions. Get in touch with our team for web development, app development, AI solutions, and more. Start your digital transformation today."
+        keywords="contact webtriq, technology consultation, web development contact, app development contact, AI solutions contact, digital transformation consultation"
+        canonical="/contact-us"
+        ogImage="/logo.png"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "ContactPage",
+          "name": "Contact Webtriq Technologies",
+          "description": "Initiate Your Digital Transformation Journey",
+          "url": "https://webtriq.com/contact-us",
+          "mainEntity": {
+            "@type": "Organization",
+            "name": "Webtriq Technologies",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Salarpuria Symbiosis, Ground floor Bannerghatta Road Arekere Village, Begur Hobli",
+              "addressLocality": "Bengaluru",
+              "addressRegion": "Karnataka",
+              "postalCode": "560076",
+              "addressCountry": "IN"
+            },
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "telephone": "+918219912716",
+                "contactType": "customer service",
+                "email": "connect@webtriq.com"
+              }
+            ]
+          }
+        }}
+      />
       <WebsiteHeader />
       <PageBanner title="Contact Us" />
       <div className="pt-[3rem]">

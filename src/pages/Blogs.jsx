@@ -5,10 +5,47 @@ import WebsiteFooter from "../components/website/WebsiteFooter";
 import SubHeading from "../components/SubHeading";
 import { blogs } from "../data/blogs";
 import ImageWithSkeleton from "../components/ImageWithSkeleton";
+import SEO from "../components/SEO";
 const PageBanner = React.lazy(() => import("../components/website/PageBanner"));
 const Blogs = () => {
   return ( 
     <>
+      <SEO 
+        title="Blogs - Webtriq Technologies | Technology Insights & Digital Transformation"
+        description="Explore our technology blog featuring insights on AI, blockchain, IoT, web development, and digital transformation. Stay updated with the latest trends and strategies."
+        keywords="technology blog, AI insights, blockchain technology, IoT solutions, web development blog, digital transformation, technology trends, software development insights"
+        canonical="/blogs"
+        ogImage="/logo.png"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "name": "Webtriq Technologies Blog",
+          "description": "Strategic Insights & Technological Perspectives: Navigating Digital Transformation",
+          "url": "https://webtriq.com/blogs",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Webtriq Technologies",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://webtriq.com/logo.png"
+            }
+          },
+          "blogPost": blogs.map(blog => ({
+            "@type": "BlogPosting",
+            "headline": blog.title,
+            "description": blog.excerpt,
+            "datePublished": blog.date,
+            "author": {
+              "@type": "Organization",
+              "name": "Webtriq Technologies"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Webtriq Technologies"
+            }
+          }))
+        }}
+      />
       <WebsiteHeader />
       <PageBanner title="Blogs" />
       <div className="bg-secondary/5 relative text-primary_text">

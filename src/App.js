@@ -15,6 +15,8 @@ import { LoadingSpinner } from "./components/LoadingSpinner";
 import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppIcon from "./components/WhatsAppIcon";
 import { Toaster } from "react-hot-toast";
+import SitemapRoute from "./components/SitemapRoute";
+import RobotsRoute from "./components/RobotsRoute";
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
 
@@ -44,6 +46,10 @@ function App() {
             }}
           />
           <Routes>
+            {/* SEO Routes */}
+            <Route path="/sitemap.xml" element={<SitemapRoute />} />
+            <Route path="/robots.txt" element={<RobotsRoute />} />
+            
             {/* Website pages */}
             {routes.map((route) => (
               <Route path={route.path} element={route.element} />

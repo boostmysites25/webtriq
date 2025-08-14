@@ -8,6 +8,7 @@ import "../styles/blog-content.css";
 import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import ImageWithSkeleton from "../components/ImageWithSkeleton";
+import SEO from "../components/SEO";
 const PageBanner = React.lazy(() => import("../components/website/PageBanner"));
 
 const ServiceDetails = () => {
@@ -22,6 +23,30 @@ const ServiceDetails = () => {
 
   return (
     <>
+      <SEO 
+        title={`${service.title} Services - Webtriq Technologies | Expert ${service.title} Solutions`}
+        description={service.description}
+        keywords={`${service.title.toLowerCase()}, ${service.title.toLowerCase()} services, ${service.title.toLowerCase()} development, technology solutions, webtriq technologies`}
+        canonical={`/services/${title}`}
+        ogImage="/logo.png"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": service.title,
+          "description": service.description,
+          "provider": {
+            "@type": "Organization",
+            "name": "Webtriq Technologies",
+            "url": "https://webtriq.com"
+          },
+          "areaServed": {
+            "@type": "Country",
+            "name": "India"
+          },
+          "serviceType": service.title,
+          "url": `https://webtriq.com/services/${title}`
+        }}
+      />
       <WebsiteHeader />
       <PageBanner title="Service Details" />
       <div className="bg-gradient-to-br from-primary/5 via-white to-secondary/5 relative text-primary_text min-h-screen">

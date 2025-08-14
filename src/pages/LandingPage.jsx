@@ -8,6 +8,7 @@ import appDevAboutImg from "../assets/images/landingpage/app-dev-about.webp";
 import webDevAboutImg from "../assets/images/landingpage/web-dev-about.jpeg";
 import ReactPlayer from "react-player";
 import ImageWithSkeleton from "../components/ImageWithSkeleton";
+import SEO from "../components/SEO";
 
 const LandingHeader = lazy(() =>
   import("../components/landingPages/LandingHeader")
@@ -39,6 +40,37 @@ const LandingPage = ({ page }) => {
 
   return (
     <>
+      <SEO 
+        title={isWebLanding 
+          ? "Web Development Services - Webtriq Technologies | Custom Website Development"
+          : "App Development Services - Webtriq Technologies | Mobile App Development"
+        }
+        description={isWebLanding 
+          ? "Transform your business with our expert web development services. We create custom, responsive websites that drive results and enhance user experience."
+          : "Build powerful mobile applications with our expert app development services. iOS, Android, and cross-platform solutions for your business."
+        }
+        keywords={isWebLanding 
+          ? "web development, website development, custom websites, responsive web design, e-commerce websites, web applications"
+          : "app development, mobile app development, iOS app development, Android app development, cross-platform apps, mobile applications"
+        }
+        canonical={isWebLanding ? "/web-development" : "/app-development"}
+        ogImage="/logo.png"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Service",
+          "name": isWebLanding ? "Web Development Services" : "App Development Services",
+          "description": isWebLanding 
+            ? "Transform your business with our expert web development services"
+            : "Build powerful mobile applications with our expert app development services",
+          "provider": {
+            "@type": "Organization",
+            "name": "Webtriq Technologies",
+            "url": "https://webtriq.com"
+          },
+          "serviceType": isWebLanding ? "Web Development" : "App Development",
+          "url": `https://webtriq.com${isWebLanding ? "/web-development" : "/app-development"}`
+        }}
+      />
       <LandingHeader
         link={isWebLanding ? "/web-development" : "/app-development"}
       />

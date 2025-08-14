@@ -6,6 +6,7 @@ import aboutImg1 from "../assets/images/aboutus-img1.webp";
 import aboutImg2 from "../assets/images/aboutus-img2.webp";
 import aboutImg3 from "../assets/images/home-about-img.jpeg";
 import ImageWithSkeleton from "../components/ImageWithSkeleton";
+import SEO from "../components/SEO";
 // import teamImg1 from "../assets/images/team1.jpeg";
 // import teamImg2 from "../assets/images/team2.jpeg";
 // import teamImg3 from "../assets/images/team3.jpeg";
@@ -35,6 +36,36 @@ const AboutUs = () => {
   // }, [imgChangeInterval]);
   return (
     <>
+      <SEO 
+        title="About Us - Webtriq Technologies | Leading Technology Solutions Provider"
+        description="Discover Webtriq Technologies' journey in delivering innovative technology solutions. Our expert team specializes in web development, app development, AI, IoT, and blockchain solutions."
+        keywords="about webtriq, technology company, web development company, app development company, AI solutions, IoT solutions, blockchain development, digital transformation"
+        canonical="/about-us"
+        ogImage="/logo.png"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Webtriq Technologies",
+          "url": "https://webtriq.com",
+          "logo": "https://webtriq.com/logo.png",
+          "description": "Architecting Digital Excellence Through Strategic Innovation",
+          "foundingDate": "2020",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Salarpuria Symbiosis, Ground floor Bannerghatta Road Arekere Village, Begur Hobli",
+            "addressLocality": "Bengaluru",
+            "addressRegion": "Karnataka",
+            "postalCode": "560076",
+            "addressCountry": "IN"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+918219912716",
+            "contactType": "customer service",
+            "email": "connect@webtriq.com"
+          }
+        }}
+      />
       <WebsiteHeader />
       <PageBanner title="About Us" />
       <section className="text-primary_text wrapper py-[3rem]">
