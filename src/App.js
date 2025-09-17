@@ -15,8 +15,7 @@ import { LoadingSpinner } from "./components/LoadingSpinner";
 import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppIcon from "./components/WhatsAppIcon";
 import { Toaster } from "react-hot-toast";
-import SitemapRoute from "./components/SitemapRoute";
-import RobotsRoute from "./components/RobotsRoute";
+import ErrorBoundary from "./components/ErrorBoundary";
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
 
@@ -30,9 +29,10 @@ AOS.init({
 
 function App() {
   return (
-    <Suspense fallback={<LoadingSpinner />}>
-      <SpinnerContextProvider>
-        <Router>
+    <ErrorBoundary>
+      <Suspense fallback={<LoadingSpinner />}>
+        <SpinnerContextProvider>
+          <Router>
           <LoadingSpinnerContext />
           <WhatsAppIcon />
           <ScrollToTop />
@@ -46,13 +46,9 @@ function App() {
             }}
           />
           <Routes>
-            {/* SEO Routes */}
-            <Route path="/sitemap.xml" element={<SitemapRoute />} />
-            <Route path="/robots.txt" element={<RobotsRoute />} />
-            
             {/* Website pages */}
             {routes.map((route) => (
-              <Route path={route.path} element={route.element} />
+              <Route key={route.path} path={route.path} element={route.element} />
             ))}
 
             <Route path="*" element={<Navigate to="/" />} />
@@ -68,9 +64,10 @@ function App() {
               element={<LandingPage page={"app-development"} />}
             />
           </Routes>
-        </Router>
-      </SpinnerContextProvider>
-    </Suspense>
+          </Router>
+        </SpinnerContextProvider>
+      </Suspense>
+    </ErrorBoundary>
   );
 }
 

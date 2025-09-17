@@ -1,6 +1,6 @@
 import { routes } from '../constant';
 import { blogs } from '../data/blogs';
-import { allServices } from '../constant';
+import { services as allServices } from '../data/services';
 
 const baseUrl = 'https://webtriq.com'; // Replace with your actual domain
 
